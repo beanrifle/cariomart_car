@@ -1,7 +1,7 @@
 KEY IDE_DES_TOOL "Ide"
-KEY IDE_DES_ADB_PATH "C:\Users\youngben\Documents\CarioMart\designer\impl1\smartfusionmss.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\youngben\Documents\cariomart_car\designer\impl1\smartfusionmss.adb"
 LIST SOURCE_FILES
-VALUE "C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\smartfusionmss.pdc;pdc"
+VALUE "C:\Users\youngben\Documents\cariomart_car\component\work\smartfusionmss\smartfusionmss.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

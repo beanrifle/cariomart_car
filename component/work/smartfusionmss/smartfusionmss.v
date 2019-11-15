@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Nov 14 21:03:36 2019
+// Created by SmartDesign Fri Nov 15 13:57:28 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -12,6 +12,7 @@ module smartfusionmss(
     MSSPREADY,
     MSSPSLVERR,
     MSS_RESET_N,
+    UART_0_RXD,
     UART_1_RXD,
     // Outputs
     FAB_CLK,
@@ -21,6 +22,7 @@ module smartfusionmss(
     MSSPSEL,
     MSSPWDATA,
     MSSPWRITE,
+    UART_0_TXD,
     UART_1_TXD
 );
 
@@ -31,6 +33,7 @@ input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
 input         MSS_RESET_N;
+input         UART_0_RXD;
 input         UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
@@ -42,6 +45,7 @@ output        MSSPENABLE;
 output        MSSPSEL;
 output [31:0] MSSPWDATA;
 output        MSSPWRITE;
+output        UART_0_TXD;
 output        UART_1_TXD;
 //--------------------------------------------------------------------
 // Nets
@@ -54,6 +58,8 @@ wire          MSS_ADLIB_INST_PLLLOCK;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK;
 wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
+wire          MSS_UART_0_RXD_Y;
+wire          MSS_UART_0_TXD_D;
 wire          MSS_UART_1_RXD_Y;
 wire          MSS_UART_1_TXD_D;
 wire          net_71;
@@ -65,6 +71,8 @@ wire          net_72_PSELx;
 wire          MSSPSLVERR;
 wire   [31:0] net_72_PWDATA;
 wire          net_72_PWRITE;
+wire          UART_0_RXD;
+wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
 wire          net_72_PSELx_net_0;
@@ -74,6 +82,7 @@ wire          MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
 wire          net_71_net_0;
 wire   [19:0] net_72_PADDR_net_0;
 wire   [31:0] net_72_PWDATA_net_0;
+wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
@@ -116,6 +125,8 @@ assign net_72_PADDR_net_0               = net_72_PADDR;
 assign MSSPADDR[19:0]                   = net_72_PADDR_net_0;
 assign net_72_PWDATA_net_0              = net_72_PWDATA;
 assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
+assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
+assign UART_0_TXD                       = UART_0_TXD_net_1;
 assign UART_1_TXD_net_1                 = UART_1_TXD_net_0;
 assign UART_1_TXD                       = UART_1_TXD_net_1;
 //--------------------------------------------------------------------
@@ -191,7 +202,7 @@ MSS_ADLIB_INST(
         .SPI0DI         ( GND_net ), // tied to 1'b0 from definition
         .SPI0CLKI       ( GND_net ), // tied to 1'b0 from definition
         .SPI0SSI        ( GND_net ), // tied to 1'b0 from definition
-        .UART0RXD       ( GND_net ), // tied to 1'b0 from definition
+        .UART0RXD       ( MSS_UART_0_RXD_Y ),
         .I2C0SDAI       ( GND_net ), // tied to 1'b0 from definition
         .I2C0SCLI       ( GND_net ), // tied to 1'b0 from definition
         .SPI1DI         ( GND_net ), // tied to 1'b0 from definition
@@ -314,7 +325,7 @@ MSS_ADLIB_INST(
         .SPI0CLKO       (  ),
         .SPI0MODE       (  ),
         .SPI0SSO        (  ),
-        .UART0TXD       (  ),
+        .UART0TXD       ( MSS_UART_0_TXD_D ),
         .I2C0SDAO       (  ),
         .I2C0SCLO       (  ),
         .SPI1DO         (  ),
@@ -390,6 +401,28 @@ MSS_RESET_0_MSS_RESET_N(
         .PAD ( MSS_RESET_N ),
         // Outputs
         .Y   ( MSS_RESET_0_MSS_RESET_N_Y ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U18" ) )
+MSS_UART_0_RXD(
+        // Inputs
+        .PAD ( UART_0_RXD ),
+        // Outputs
+        .Y   ( MSS_UART_0_RXD_Y ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "Y22" ) )
+MSS_UART_0_TXD(
+        // Inputs
+        .D   ( MSS_UART_0_TXD_D ),
+        // Outputs
+        .PAD ( UART_0_TXD_net_0 ) 
         );
 
 //--------INBUF_MSS

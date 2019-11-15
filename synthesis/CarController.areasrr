@@ -18,13 +18,13 @@ Report for cell smartfusionmss.netlist
                                cell       count     area    count*area
                              CLKINT         1       0.0        0.0
                                 GND         1       0.0        0.0
-                          INBUF_MSS         2       0.0        0.0
+                          INBUF_MSS         3       0.0        0.0
                             MSS_APB         1       0.0        0.0
-                         OUTBUF_MSS         1       0.0        0.0
+                         OUTBUF_MSS         2       0.0        0.0
                                 VCC         1       0.0        0.0
           smartfusionmss_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL              8                  0.0
+                         TOTAL             10                  0.0
 ----------------------------------------------------------------------
 Report for cell smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  smartfusionmss_0.MSS_CCC_0

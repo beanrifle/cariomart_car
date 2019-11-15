@@ -1,6 +1,6 @@
 <project name="CarController" version="1.1">
     <ProjectDirectory>
-        C:\Users\youngben\Documents\CarioMart\designer\impl1\CarController_fp
+        C:\Users\youngben\Documents\cariomart_car\designer\impl1\CarController_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\youngben\Documents\CarioMart\designer\impl1\CarController_fp\CarController.log
+        C:\Users\youngben\Documents\cariomart_car\designer\impl1\CarController_fp\CarController.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\youngben\Documents\CarioMart\designer\impl1\CarController_fp\CarController.pdb
+                C:\Users\youngben\Documents\cariomart_car\designer\impl1\CarController_fp\CarController.pdb
             </filename>
             <local>
                 projectData\CarController.pdb

@@ -1,6 +1,0 @@
-#ifndef XBEE_H
-#define XBEE_H
-
-#include <inttypes.h>
-
-#endif

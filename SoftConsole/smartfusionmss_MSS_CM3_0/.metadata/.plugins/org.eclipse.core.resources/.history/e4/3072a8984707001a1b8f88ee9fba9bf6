@@ -1,7 +1,0 @@
-#ifndef XBEE_H
-#define XBEE_H
-
-#include <inttypes.h>
-#include "drivers/mss_uart/mss_uart.h"
-
-#endif

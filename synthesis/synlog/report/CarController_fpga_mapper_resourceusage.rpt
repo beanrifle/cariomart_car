@@ -78,15 +78,15 @@ Report for cell CarController.verilog
 
   IO Cell usage:
               cell count
-         INBUF_MSS     2
+         INBUF_MSS     3
             OUTBUF     6
-        OUTBUF_MSS     1
+        OUTBUF_MSS     2
                    -----
-             TOTAL     9
+             TOTAL    11
 
 
 Core Cells         : 1332 of 4608 (29%)
-IO Cells           : 9
+IO Cells           : 11
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

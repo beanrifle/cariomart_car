@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <string.h>
+
+#include "CarControl.h"
+#include "xbee.h"
+
+int main() {
+	initialize_controller_reciever();
+
+	setLeftSideForward();
+	setRightSideForward();
+
+	setLeftSideSpeed(64);
+	setRightSideSpeed(64);
+
+	setLeftSideReverse();
+	setRightSideReverse();
+
+	setLeftSideSpeed(128);
+	setRightSideSpeed(128);
+
+	setLeftSideSpeed(0);
+	setRightSideSpeed(0);
+
+	//strcpy(recieved_data, "hello world!");
+	while(1){
+		uint8_t rx_buff[20];
+		MSS_UART_get_rx( &g_mss_uart0, rx_buff, sizeof(rx_buff) );
+	}
+
+}

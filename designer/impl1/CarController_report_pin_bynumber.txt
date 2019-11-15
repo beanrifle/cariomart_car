@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Thu Nov 14 21:04:35 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Fri Nov 15 14:00:05 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -423,7 +423,7 @@ U14                     Not Bonded                    Unconnected
 U15                     GNDVAREF                      Special
 U16                     VCC33SDD1                     Reserved
 U17                     SPI_0_DO/GPIO_16              Special
-U18                     UART_0_RXD/GPIO_21            Special
+U18     UART_0_RXD      UART_0_RXD/GPIO_21            Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
 U19                     VCCMSSIOB2                    Reserved
 U20                     I2C_1_SCL/GPIO_31             Special
 U21                     I2C_0_SCL/GPIO_23             Special
@@ -493,4 +493,4 @@ Y18                     PTEM                          Reserved
 Y19                     VCC33A                        Reserved
 Y20                     SPI_0_SS/GPIO_19              Special
 Y21                     VCCMSSIOB2                    Reserved
-Y22                     UART_0_TXD/GPIO_20            Special
+Y22     UART_0_TXD      UART_0_TXD/GPIO_20            Special      LVTTL    8                  High  None           ---              No    35                No           Yes

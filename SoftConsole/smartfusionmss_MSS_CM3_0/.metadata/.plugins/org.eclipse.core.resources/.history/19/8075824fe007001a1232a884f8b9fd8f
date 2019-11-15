@@ -1,0 +1,13 @@
+#include "xbee.h"
+#include <string.h>
+#include <stdio.h>
+
+void initialize_controller_reciever(void) {
+	MSS_UART_init(&g_mss_uart1, MSS_UART_9600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
+}
+
+void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
+	//uint8_t rx_buff[20];
+	MSS_UART_get_rx( this_uart, recieved_data, sizeof(recieved_data) );
+	printf("%i\r\n", recieved_data[0]);
+}
