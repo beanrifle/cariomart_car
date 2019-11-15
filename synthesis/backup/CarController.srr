@@ -1,0 +1,789 @@
+#Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
+#install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: EECS373-08
+
+# Thu Nov 14 17:15:55 2019
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q4p1, Build 517R, built Oct 30 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\smartfusionmss.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\CarController\CarController.v" (library work)
+Verilog syntax check successful!
+Selecting top level module CarController
+@W: CG775 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	FAMILY=32'b00000000000000000000000000010010
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|Removing wire CAPB3IlOI, as there is no assignment to it.
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":27:7:27:23|Synthesizing module hbridgecontroller in library work.
+
+	PWM_PERIOD=32'b00000000000000110000110101000000
+   Generated name = hbridgecontroller_200000s
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:42|Synthesizing module smartfusionmss_tmp_MSS_CCC_0_MSS_CCC in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\smartfusionmss.v":9:7:9:20|Synthesizing module smartfusionmss in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\CarController\CarController.v":9:7:9:19|Synthesizing module CarController in library work.
+
+@W: CL157 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[18] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[19] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[20] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[21] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[22] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[23] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[24] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[25] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[26] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[27] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[28] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[29] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[30] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[31] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[0] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[1] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[2] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[3] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[4] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[5] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[18] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[19] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[20] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[21] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[22] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[23] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[24] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[25] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[26] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[27] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[28] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[29] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[30] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[31] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[0] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[1] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[2] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[3] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[4] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[5] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[18] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[19] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[20] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[21] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[22] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[23] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[24] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[25] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[26] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[27] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[28] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[29] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[30] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[31] is always 0.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 31 to 18 of M2_duty[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 5 to 0 of M2_duty[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 31 to 18 of M1_duty[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 5 to 0 of M1_duty[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Pruning register bits 31 to 18 of counter[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 31 to 20 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL257 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit 19 always 0, optimizing ...
+@W: CL260 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bit 19 of PRDATA[19:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 84MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 17:15:55 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 17:15:55 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 17:15:55 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 17:15:57 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Nov 14 17:15:57 2019
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell_syn.sdc
+@L: C:\Users\youngben\Documents\CarioMart\synthesis\CarController_scck.rpt 
+Printing clock  summary report in "C:\Users\youngben\Documents\CarioMart\synthesis\CarController_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: BN115 :"c:\users\youngben\documents\cariomart\component\actel\directcore\coreapb3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":3815:0:3815:8|Removing instance CAPB3IIII (in view: COREAPB3_LIB.CoreAPB3_Z1(verilog)) of type view:COREAPB3_LIB.CAPB3II(verilog) because it does not drive other instances.
+@N: BN115 :"c:\users\youngben\documents\cariomart\component\work\carcontroller\carcontroller.v":179:0:179:9|Removing instance CoreAPB3_0 (in view: work.CarController(verilog)) of type view:COREAPB3_LIB.CoreAPB3_Z1(verilog) because it does not drive other instances.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Clock Summary
+*****************
+
+Start       Requested     Requested     Clock        Clock           Clock
+Clock       Frequency     Period        Type         Group           Load 
+--------------------------------------------------------------------------
+FAB_CLK     100.0 MHz     10.000        declared     clk_group_0     46   
+FCLK        100.0 MHz     10.000        declared     clk_group_0     0    
+==========================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\youngben\Documents\CarioMart\synthesis\CarController.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 26MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 17:15:57 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Nov 14 17:15:57 2019
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: BN132 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Removing sequential instance hbridgecontroller_0.motor2_ctrl[1] because it is equivalent to instance hbridgecontroller_0.motor1_ctrl[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+@W: MO161 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit motor1_ctrl[1] (in view view:work.hbridgecontroller_200000s(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MF238 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":78:19:78:30|Found 18-bit incrementor, 'un3_counter_1[17:0]'
+@N: MF179 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":81:8:81:25|Found 18 by 18 bit less-than operator ('<') motor1_pwm4 (in view: work.hbridgecontroller_200000s(verilog))
+@N: MF179 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":85:8:85:25|Found 18 by 18 bit less-than operator ('<') motor2_pwm6 (in view: work.hbridgecontroller_200000s(verilog))
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[17] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[16] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[15] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[14] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[13] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[12] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[11] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[10] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[9] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[8] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[7] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[6] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[17] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[16] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[15] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[14] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[13] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[12] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[11] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[10] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[9] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[8] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[7] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[6] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 20 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+========================================= Non-Gated/Non-Generated Clocks ==========================================
+Clock Tree ID     Driving Element      Drive Element Type                Fanout     Sample Instance                
+-------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       smartfusionmss_0     clock definition on hierarchy     20         hbridgecontroller_0.counter[17]
+===================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
+
+Writing Analyst data base C:\Users\youngben\Documents\CarioMart\synthesis\synwork\CarController_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-SP1-5
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+@N: MT615 |Found clock FCLK with period 10.00ns 
+@N: MT615 |Found clock FAB_CLK with period 10.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 14 17:15:58 2019
+#
+
+
+Top view:               CarController
+Library name:           smartfusion
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell_syn.sdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.878
+
+                   Requested     Estimated      Requested     Estimated               Clock        Clock          
+Starting Clock     Frequency     Frequency      Period        Period        Slack     Type         Group          
+------------------------------------------------------------------------------------------------------------------
+FAB_CLK            100.0 MHz     109.6 MHz      10.000        9.122         0.878     declared     clk_group_0    
+FCLK               100.0 MHz     NA             10.000        NA            NA        declared     clk_group_0    
+System             100.0 MHz     3110.4 MHz     10.000        0.322         9.678     system       system_clkgroup
+==================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System   |  10.000      9.678  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  10.000      0.878  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                       Arrival          
+Instance                            Reference     Type     Pin     Net             Time        Slack
+                                    Clock                                                           
+----------------------------------------------------------------------------------------------------
+hbridgecontroller_0.counter[1]      FAB_CLK       DFN1     Q       counter[1]      0.737       0.878
+hbridgecontroller_0.counter[0]      FAB_CLK       DFN1     Q       counter[0]      0.580       0.899
+hbridgecontroller_0.counter[4]      FAB_CLK       DFN1     Q       counter[4]      0.737       1.077
+hbridgecontroller_0.counter[3]      FAB_CLK       DFN1     Q       counter[3]      0.737       1.124
+hbridgecontroller_0.counter[2]      FAB_CLK       DFN1     Q       counter[2]      0.737       1.220
+hbridgecontroller_0.counter[5]      FAB_CLK       DFN1     Q       counter[5]      0.737       1.420
+hbridgecontroller_0.counter[8]      FAB_CLK       DFN1     Q       counter[8]      0.737       1.774
+hbridgecontroller_0.counter[7]      FAB_CLK       DFN1     Q       counter[7]      0.737       1.905
+hbridgecontroller_0.counter[6]      FAB_CLK       DFN1     Q       counter[6]      0.737       1.952
+hbridgecontroller_0.counter[10]     FAB_CLK       DFN1     Q       counter[10]     0.737       1.976
+====================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                         Required          
+Instance                            Reference     Type     Pin     Net               Time         Slack
+                                    Clock                                                              
+-------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.counter[11]     FAB_CLK       DFN1     D       counter_3[11]     9.461        0.878
+hbridgecontroller_0.counter[16]     FAB_CLK       DFN1     D       counter_3[16]     9.461        0.878
+hbridgecontroller_0.counter[17]     FAB_CLK       DFN1     D       counter_3[17]     9.461        0.878
+hbridgecontroller_0.counter[12]     FAB_CLK       DFN1     D       I_35              9.461        1.660
+hbridgecontroller_0.counter[13]     FAB_CLK       DFN1     D       I_37              9.461        1.823
+hbridgecontroller_0.counter[14]     FAB_CLK       DFN1     D       I_40              9.461        1.823
+hbridgecontroller_0.counter[15]     FAB_CLK       DFN1     D       I_43              9.461        1.823
+hbridgecontroller_0.counter[10]     FAB_CLK       DFN1     D       counter_3[10]     9.461        2.018
+hbridgecontroller_0.counter[6]      FAB_CLK       DFN1     D       counter_3[6]      9.461        2.412
+hbridgecontroller_0.counter[8]      FAB_CLK       DFN1     D       counter_3[8]      9.461        2.412
+=======================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      8.584
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.878
+
+    Number of logic level(s):                5
+    Starting point:                          hbridgecontroller_0.counter[1] / Q
+    Ending point:                            hbridgecontroller_0.counter[11] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.counter[1]             DFN1      Q        Out     0.737     0.737       -         
+counter[1]                                 Net       -        -       1.184     -           4         
+hbridgecontroller_0.un3_counter_1.I_10     AND3      B        In      -         1.921       -         
+hbridgecontroller_0.un3_counter_1.I_10     AND3      Y        Out     0.607     2.527       -         
+DWACT_FINC_E[0]                            Net       -        -       1.526     -           7         
+hbridgecontroller_0.un3_counter_1.I_30     AND3      A        In      -         4.053       -         
+hbridgecontroller_0.un3_counter_1.I_30     AND3      Y        Out     0.464     4.517       -         
+DWACT_FINC_E[6]                            Net       -        -       1.526     -           7         
+hbridgecontroller_0.un3_counter_1.I_31     AND3      A        In      -         6.043       -         
+hbridgecontroller_0.un3_counter_1.I_31     AND3      Y        Out     0.464     6.507       -         
+N_8                                        Net       -        -       0.322     -           1         
+hbridgecontroller_0.un3_counter_1.I_32     XOR2      A        In      -         6.829       -         
+hbridgecontroller_0.un3_counter_1.I_32     XOR2      Y        Out     0.488     7.317       -         
+I_32                                       Net       -        -       0.322     -           1         
+hbridgecontroller_0.counter_RNO[11]        NOR3B     B        In      -         7.638       -         
+hbridgecontroller_0.counter_RNO[11]        NOR3B     Y        Out     0.624     8.262       -         
+counter_3[11]                              Net       -        -       0.322     -           1         
+hbridgecontroller_0.counter[11]            DFN1      D        In      -         8.584       -         
+======================================================================================================
+Total path delay (propagation time + setup) of 9.122 is 3.922(43.0%) logic and 5.200(57.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                                       Arrival          
+Instance                            Reference     Type        Pin        Net                       Time        Slack
+                                    Clock                                                                           
+--------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK     MSS_ADLIB_INST_EMCCLK     0.000       9.678
+====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                          Required          
+Instance                            Reference     Type        Pin           Net                       Time         Slack
+                                    Clock                                                                               
+------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN     MSS_ADLIB_INST_EMCCLK     10.000       9.678
+========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      0.322
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 9.678
+
+    Number of logic level(s):                0
+    Starting point:                          smartfusionmss_0.MSS_ADLIB_INST / EMCCLK
+    Ending point:                            smartfusionmss_0.MSS_ADLIB_INST / EMCCLKRTN
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                  Pin           Pin               Arrival     No. of    
+Name                                Type        Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST     MSS_APB     EMCCLK        Out     0.000     0.000       -         
+MSS_ADLIB_INST_EMCCLK               Net         -             -       0.322     -           1         
+smartfusionmss_0.MSS_ADLIB_INST     MSS_APB     EMCCLKRTN     In      -         0.322       -         
+======================================================================================================
+Total path delay (propagation time + setup) of 0.322 is 0.000(0.0%) logic and 0.322(100.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell CarController.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     5      1.0        5.0
+              AND3    19      1.0       19.0
+              AO1A     1      1.0        1.0
+               GND     4      0.0        0.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+              NOR2     2      1.0        2.0
+             NOR2B     4      1.0        4.0
+             NOR3A     3      1.0        3.0
+             NOR3B     6      1.0        6.0
+             NOR3C     2      1.0        2.0
+              OR2B     2      1.0        2.0
+             RCOSC     1      0.0        0.0
+               VCC     4      0.0        0.0
+              XOR2    17      1.0       17.0
+
+
+              DFN1    20      1.0       20.0
+                   -----          ----------
+             TOTAL    92                81.0
+
+
+  IO Cell usage:
+              cell count
+         INBUF_MSS     2
+            OUTBUF     6
+        OUTBUF_MSS     1
+                   -----
+             TOTAL     9
+
+
+Core Cells         : 81 of 4608 (2%)
+IO Cells           : 9
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 17:15:58 2019
+
+###########################################################]

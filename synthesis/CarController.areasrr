@@ -1,0 +1,131 @@
+----------------------------------------------------------------------
+Report for cell CarController.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                        CoreAPB3_Z1         1       5.0        5.0
+                                GND         1       0.0        0.0
+                             OUTBUF         6       0.0        0.0
+                                VCC         1       0.0        0.0
+                              XNOR2         1       1.0        1.0
+          hbridgecontroller_200000s         1    1326.0     1326.0
+                     smartfusionmss         1       0.0        0.0
+                            
+                         TOTAL             12               1332.0
+----------------------------------------------------------------------
+Report for cell smartfusionmss.netlist
+     Instance path:  smartfusionmss_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                             CLKINT         1       0.0        0.0
+                                GND         1       0.0        0.0
+                          INBUF_MSS         2       0.0        0.0
+                            MSS_APB         1       0.0        0.0
+                         OUTBUF_MSS         1       0.0        0.0
+                                VCC         1       0.0        0.0
+          smartfusionmss_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
+                            
+                         TOTAL              8                  0.0
+----------------------------------------------------------------------
+Report for cell smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.netlist
+     Instance path:  smartfusionmss_0.MSS_CCC_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                            MSS_CCC         1       0.0        0.0
+                              RCOSC         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0
+----------------------------------------------------------------------
+Report for cell hbridgecontroller_200000s.netlist
+     Instance path:  hbridgecontroller_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        19       1.0       19.0
+                              AND2A         4       1.0        4.0
+                               AND3        31       1.0       31.0
+                                AO1        70       1.0       70.0
+                               AO16         1       1.0        1.0
+                               AO1A        12       1.0       12.0
+                               AO1B         4       1.0        4.0
+                               AO1C        13       1.0       13.0
+                               AOI1        10       1.0       10.0
+                              AOI1A        12       1.0       12.0
+                              AOI1B        22       1.0       22.0
+                                AX1         1       1.0        1.0
+                               AX1A         2       1.0        2.0
+                               AX1B         9       1.0        9.0
+                               AX1C         4       1.0        4.0
+                               AX1D        21       1.0       21.0
+                               AX1E         2       1.0        2.0
+                               AXO1         1       1.0        1.0
+                               AXO2         1       1.0        1.0
+                               AXO3         1       1.0        1.0
+                               AXO6        13       1.0       13.0
+                              AXOI1         1       1.0        1.0
+                              AXOI2         1       1.0        1.0
+                              AXOI3         3       1.0        3.0
+                              AXOI4         2       1.0        2.0
+                               DFN1        66       1.0       66.0
+                             DFN1E0         5       1.0        5.0
+                                GND         1       0.0        0.0
+                                INV         2       1.0        2.0
+                               MAJ3        43       1.0       43.0
+                                MX2        38       1.0       38.0
+                               MX2A         1       1.0        1.0
+                               MX2B         1       1.0        1.0
+                               NOR2        32       1.0       32.0
+                              NOR2A        66       1.0       66.0
+                              NOR2B       199       1.0      199.0
+                               NOR3        14       1.0       14.0
+                              NOR3A        27       1.0       27.0
+                              NOR3B        30       1.0       30.0
+                              NOR3C        67       1.0       67.0
+                                OA1        64       1.0       64.0
+                               OA1A        12       1.0       12.0
+                               OA1B         6       1.0        6.0
+                               OA1C         4       1.0        4.0
+                               OAI1        13       1.0       13.0
+                                OR2        81       1.0       81.0
+                               OR2A        34       1.0       34.0
+                               OR2B         5       1.0        5.0
+                                OR3        35       1.0       35.0
+                               OR3A         4       1.0        4.0
+                               OR3B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         7       1.0        7.0
+                               XA1A         6       1.0        6.0
+                               XA1B         1       1.0        1.0
+                               XA1C         1       1.0        1.0
+                               XAI1         7       1.0        7.0
+                              XNOR2        46       1.0       46.0
+                              XNOR3         3       1.0        3.0
+                                XO1         6       1.0        6.0
+                               XO1A         4       1.0        4.0
+                               XOR2        75       1.0       75.0
+                               XOR3        59       1.0       59.0
+                               ZOR3         1       1.0        1.0
+                            
+                         TOTAL           1328               1326.0
+----------------------------------------------------------------------
+Report for cell CoreAPB3_Z1.netlist
+     Instance path:  CoreAPB3_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                            CAPB3II         1       1.0        1.0
+                                GND         1       0.0        0.0
+                               NOR2         2       1.0        2.0
+                              NOR2B         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              7                  5.0
+----------------------------------------------------------------------
+Report for cell CAPB3II.netlist
+     Instance path:  CoreAPB3_0.CAPB3IIII
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                              NOR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              3                  1.0

@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <inttypes.h>
+
+#include "CarControl.h"
+
+int main() {
+	setLeftSideForward();
+	setRightSideForward();
+
+	uint32_t L_speed = 50, R_speed = 25;
+
+	setLeftSideSpeed(L_speed);
+	setRightSideSpeed(R_speed);
+
+	setLeftSideReverse();
+	setRightSideReverse();
+
+	while(1) {
+
+	}
+}

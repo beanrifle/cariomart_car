@@ -1,0 +1,822 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Thu Nov 14 21:04:39 2019
+
+
+Design: CarController
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[6]:D
+  Delay (ns):            26.937
+  Slack (ns):            -15.693
+  Arrival (ns):          30.492
+  Required (ns):         14.799
+
+Path 2
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[10]:D
+  Delay (ns):            26.937
+  Slack (ns):            -15.693
+  Arrival (ns):          30.492
+  Required (ns):         14.799
+
+Path 3
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[17]:D
+  Delay (ns):            26.937
+  Slack (ns):            -15.680
+  Arrival (ns):          30.492
+  Required (ns):         14.812
+
+Path 4
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[8]:D
+  Delay (ns):            26.863
+  Slack (ns):            -15.606
+  Arrival (ns):          30.418
+  Required (ns):         14.812
+
+Path 5
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[2]:D
+  Delay (ns):            26.769
+  Slack (ns):            -15.544
+  Arrival (ns):          30.324
+  Required (ns):         14.780
+
+Path 6
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[4]:D
+  Delay (ns):            26.769
+  Slack (ns):            -15.544
+  Arrival (ns):          30.324
+  Required (ns):         14.780
+
+Path 7
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[9]:D
+  Delay (ns):            26.769
+  Slack (ns):            -15.544
+  Arrival (ns):          30.324
+  Required (ns):         14.780
+
+Path 8
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[11]:D
+  Delay (ns):            26.695
+  Slack (ns):            -15.451
+  Arrival (ns):          30.250
+  Required (ns):         14.799
+
+Path 9
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty_0[11]:D
+  Delay (ns):            26.695
+  Slack (ns):            -15.451
+  Arrival (ns):          30.250
+  Required (ns):         14.799
+
+Path 10
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[0]:D
+  Delay (ns):            26.595
+  Slack (ns):            -15.389
+  Arrival (ns):          30.150
+  Required (ns):         14.761
+
+Path 11
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty_0[14]:D
+  Delay (ns):            26.512
+  Slack (ns):            -15.361
+  Arrival (ns):          30.067
+  Required (ns):         14.706
+
+Path 12
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[14]:D
+  Delay (ns):            26.512
+  Slack (ns):            -15.361
+  Arrival (ns):          30.067
+  Required (ns):         14.706
+
+Path 13
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty_0[13]:D
+  Delay (ns):            26.512
+  Slack (ns):            -15.300
+  Arrival (ns):          30.067
+  Required (ns):         14.767
+
+Path 14
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[13]:D
+  Delay (ns):            26.512
+  Slack (ns):            -15.300
+  Arrival (ns):          30.067
+  Required (ns):         14.767
+
+Path 15
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[3]:D
+  Delay (ns):            26.376
+  Slack (ns):            -15.170
+  Arrival (ns):          29.931
+  Required (ns):         14.761
+
+Path 16
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[1]:D
+  Delay (ns):            26.155
+  Slack (ns):            -15.001
+  Arrival (ns):          29.710
+  Required (ns):         14.709
+
+Path 17
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty_0[12]:D
+  Delay (ns):            26.147
+  Slack (ns):            -14.935
+  Arrival (ns):          29.702
+  Required (ns):         14.767
+
+Path 18
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[12]:D
+  Delay (ns):            26.147
+  Slack (ns):            -14.922
+  Arrival (ns):          29.702
+  Required (ns):         14.780
+
+Path 19
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[5]:D
+  Delay (ns):            26.069
+  Slack (ns):            -14.863
+  Arrival (ns):          29.624
+  Required (ns):         14.761
+
+Path 20
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[2]:D
+  Delay (ns):            25.750
+  Slack (ns):            -14.512
+  Arrival (ns):          29.305
+  Required (ns):         14.793
+
+Path 21
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[16]:D
+  Delay (ns):            25.601
+  Slack (ns):            -14.344
+  Arrival (ns):          29.156
+  Required (ns):         14.812
+
+Path 22
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[15]:D
+  Delay (ns):            25.493
+  Slack (ns):            -14.299
+  Arrival (ns):          29.048
+  Required (ns):         14.749
+
+Path 23
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty_0[15]:D
+  Delay (ns):            25.493
+  Slack (ns):            -14.268
+  Arrival (ns):          29.048
+  Required (ns):         14.780
+
+Path 24
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[1]:D
+  Delay (ns):            25.448
+  Slack (ns):            -14.262
+  Arrival (ns):          29.003
+  Required (ns):         14.741
+
+Path 25
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M2_duty[7]:D
+  Delay (ns):            25.438
+  Slack (ns):            -14.244
+  Arrival (ns):          28.993
+  Required (ns):         14.749
+
+Path 26
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[3]:D
+  Delay (ns):            25.385
+  Slack (ns):            -14.199
+  Arrival (ns):          28.940
+  Required (ns):         14.741
+
+Path 27
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[4]:D
+  Delay (ns):            25.362
+  Slack (ns):            -14.184
+  Arrival (ns):          28.917
+  Required (ns):         14.733
+
+Path 28
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[0]:D
+  Delay (ns):            25.294
+  Slack (ns):            -14.068
+  Arrival (ns):          28.849
+  Required (ns):         14.781
+
+Path 29
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[15]:D
+  Delay (ns):            25.220
+  Slack (ns):            -13.976
+  Arrival (ns):          28.775
+  Required (ns):         14.799
+
+Path 30
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[5]:D
+  Delay (ns):            25.130
+  Slack (ns):            -13.944
+  Arrival (ns):          28.685
+  Required (ns):         14.741
+
+Path 31
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty_0[14]:D
+  Delay (ns):            25.186
+  Slack (ns):            -13.942
+  Arrival (ns):          28.741
+  Required (ns):         14.799
+
+Path 32
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[14]:D
+  Delay (ns):            25.186
+  Slack (ns):            -13.942
+  Arrival (ns):          28.741
+  Required (ns):         14.799
+
+Path 33
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[17]:D
+  Delay (ns):            25.094
+  Slack (ns):            -13.900
+  Arrival (ns):          28.649
+  Required (ns):         14.749
+
+Path 34
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[8]:D
+  Delay (ns):            25.094
+  Slack (ns):            -13.869
+  Arrival (ns):          28.649
+  Required (ns):         14.780
+
+Path 35
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[6]:D
+  Delay (ns):            24.852
+  Slack (ns):            -13.707
+  Arrival (ns):          28.407
+  Required (ns):         14.700
+
+Path 36
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty_0[13]:D
+  Delay (ns):            24.620
+  Slack (ns):            -13.363
+  Arrival (ns):          28.175
+  Required (ns):         14.812
+
+Path 37
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty_0[12]:D
+  Delay (ns):            24.620
+  Slack (ns):            -13.363
+  Arrival (ns):          28.175
+  Required (ns):         14.812
+
+Path 38
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[12]:D
+  Delay (ns):            24.620
+  Slack (ns):            -13.363
+  Arrival (ns):          28.175
+  Required (ns):         14.812
+
+Path 39
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[13]:D
+  Delay (ns):            24.620
+  Slack (ns):            -13.363
+  Arrival (ns):          28.175
+  Required (ns):         14.812
+
+Path 40
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[16]:D
+  Delay (ns):            24.566
+  Slack (ns):            -13.360
+  Arrival (ns):          28.121
+  Required (ns):         14.761
+
+Path 41
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[7]:D
+  Delay (ns):            24.557
+  Slack (ns):            -13.331
+  Arrival (ns):          28.112
+  Required (ns):         14.781
+
+Path 42
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[9]:D
+  Delay (ns):            24.557
+  Slack (ns):            -13.300
+  Arrival (ns):          28.112
+  Required (ns):         14.812
+
+Path 43
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty_0[11]:D
+  Delay (ns):            24.467
+  Slack (ns):            -13.255
+  Arrival (ns):          28.022
+  Required (ns):         14.767
+
+Path 44
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[11]:D
+  Delay (ns):            24.467
+  Slack (ns):            -13.255
+  Arrival (ns):          28.022
+  Required (ns):         14.767
+
+Path 45
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty_0[10]:D
+  Delay (ns):            24.026
+  Slack (ns):            -12.814
+  Arrival (ns):          27.581
+  Required (ns):         14.767
+
+Path 46
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    hbridgecontroller_0/M1_duty[10]:D
+  Delay (ns):            24.026
+  Slack (ns):            -12.801
+  Arrival (ns):          27.581
+  Required (ns):         14.780
+
+Path 47
+  From:                  smartfusionmss_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            22.204
+  Slack (ns):            -11.026
+  Arrival (ns):          25.759
+  Required (ns):         14.733
+
+Path 48
+  From:                  hbridgecontroller_0/M2_duty[13]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            17.979
+  Slack (ns):            -8.535
+  Arrival (ns):          23.268
+  Required (ns):         14.733
+
+Path 49
+  From:                  hbridgecontroller_0/counter[8]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            17.947
+  Slack (ns):            -8.457
+  Arrival (ns):          23.177
+  Required (ns):         14.720
+
+Path 50
+  From:                  hbridgecontroller_0/M2_duty[11]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            17.726
+  Slack (ns):            -8.282
+  Arrival (ns):          23.015
+  Required (ns):         14.733
+
+Path 51
+  From:                  hbridgecontroller_0/counter[1]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.697
+  Slack (ns):            -8.185
+  Arrival (ns):          22.925
+  Required (ns):         14.740
+
+Path 52
+  From:                  hbridgecontroller_0/counter[8]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.660
+  Slack (ns):            -8.150
+  Arrival (ns):          22.890
+  Required (ns):         14.740
+
+Path 53
+  From:                  hbridgecontroller_0/counter[4]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.415
+  Slack (ns):            -7.942
+  Arrival (ns):          22.682
+  Required (ns):         14.740
+
+Path 54
+  From:                  hbridgecontroller_0/counter[5]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.378
+  Slack (ns):            -7.905
+  Arrival (ns):          22.645
+  Required (ns):         14.740
+
+Path 55
+  From:                  hbridgecontroller_0/counter[6]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            17.320
+  Slack (ns):            -7.867
+  Arrival (ns):          22.587
+  Required (ns):         14.720
+
+Path 56
+  From:                  hbridgecontroller_0/M2_duty[12]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            17.298
+  Slack (ns):            -7.867
+  Arrival (ns):          22.600
+  Required (ns):         14.733
+
+Path 57
+  From:                  hbridgecontroller_0/counter[3]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.189
+  Slack (ns):            -7.680
+  Arrival (ns):          22.420
+  Required (ns):         14.740
+
+Path 58
+  From:                  hbridgecontroller_0/counter[6]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.033
+  Slack (ns):            -7.560
+  Arrival (ns):          22.300
+  Required (ns):         14.740
+
+Path 59
+  From:                  hbridgecontroller_0/counter[2]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            17.029
+  Slack (ns):            -7.520
+  Arrival (ns):          22.260
+  Required (ns):         14.740
+
+Path 60
+  From:                  hbridgecontroller_0/M2_duty_0[15]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.943
+  Slack (ns):            -7.512
+  Arrival (ns):          22.245
+  Required (ns):         14.733
+
+Path 61
+  From:                  hbridgecontroller_0/M2_duty_0[11]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.926
+  Slack (ns):            -7.482
+  Arrival (ns):          22.215
+  Required (ns):         14.733
+
+Path 62
+  From:                  hbridgecontroller_0/M2_duty[15]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.868
+  Slack (ns):            -7.406
+  Arrival (ns):          22.139
+  Required (ns):         14.733
+
+Path 63
+  From:                  hbridgecontroller_0/counter[10]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.866
+  Slack (ns):            -7.379
+  Arrival (ns):          22.099
+  Required (ns):         14.720
+
+Path 64
+  From:                  hbridgecontroller_0/counter[0]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            16.880
+  Slack (ns):            -7.368
+  Arrival (ns):          22.108
+  Required (ns):         14.740
+
+Path 65
+  From:                  hbridgecontroller_0/counter[7]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.767
+  Slack (ns):            -7.314
+  Arrival (ns):          22.034
+  Required (ns):         14.720
+
+Path 66
+  From:                  hbridgecontroller_0/M2_duty[10]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.720
+  Slack (ns):            -7.276
+  Arrival (ns):          22.009
+  Required (ns):         14.733
+
+Path 67
+  From:                  hbridgecontroller_0/M1_duty_0[12]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.598
+  Slack (ns):            -7.199
+  Arrival (ns):          21.900
+  Required (ns):         14.701
+
+Path 68
+  From:                  hbridgecontroller_0/M2_duty_0[13]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.609
+  Slack (ns):            -7.165
+  Arrival (ns):          21.898
+  Required (ns):         14.733
+
+Path 69
+  From:                  hbridgecontroller_0/counter[11]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.624
+  Slack (ns):            -7.137
+  Arrival (ns):          21.857
+  Required (ns):         14.720
+
+Path 70
+  From:                  hbridgecontroller_0/counter[10]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            16.579
+  Slack (ns):            -7.072
+  Arrival (ns):          21.812
+  Required (ns):         14.740
+
+Path 71
+  From:                  hbridgecontroller_0/counter[13]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.476
+  Slack (ns):            -7.023
+  Arrival (ns):          21.743
+  Required (ns):         14.720
+
+Path 72
+  From:                  hbridgecontroller_0/M1_duty[12]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.421
+  Slack (ns):            -7.022
+  Arrival (ns):          21.723
+  Required (ns):         14.701
+
+Path 73
+  From:                  hbridgecontroller_0/M1_duty_0[13]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.415
+  Slack (ns):            -7.016
+  Arrival (ns):          21.717
+  Required (ns):         14.701
+
+Path 74
+  From:                  hbridgecontroller_0/M1_duty[13]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.446
+  Slack (ns):            -7.015
+  Arrival (ns):          21.748
+  Required (ns):         14.733
+
+Path 75
+  From:                  hbridgecontroller_0/counter[7]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            16.480
+  Slack (ns):            -7.007
+  Arrival (ns):          21.747
+  Required (ns):         14.740
+
+Path 76
+  From:                  hbridgecontroller_0/M1_duty[15]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.357
+  Slack (ns):            -6.945
+  Arrival (ns):          21.646
+  Required (ns):         14.701
+
+Path 77
+  From:                  hbridgecontroller_0/counter[1]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.417
+  Slack (ns):            -6.925
+  Arrival (ns):          21.645
+  Required (ns):         14.720
+
+Path 78
+  From:                  hbridgecontroller_0/M1_duty[16]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.283
+  Slack (ns):            -6.865
+  Arrival (ns):          21.566
+  Required (ns):         14.701
+
+Path 79
+  From:                  hbridgecontroller_0/counter[11]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            16.337
+  Slack (ns):            -6.830
+  Arrival (ns):          21.570
+  Required (ns):         14.740
+
+Path 80
+  From:                  hbridgecontroller_0/M2_duty[14]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.270
+  Slack (ns):            -6.765
+  Arrival (ns):          21.498
+  Required (ns):         14.733
+
+Path 81
+  From:                  hbridgecontroller_0/M1_duty[14]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.176
+  Slack (ns):            -6.764
+  Arrival (ns):          21.465
+  Required (ns):         14.701
+
+Path 82
+  From:                  hbridgecontroller_0/counter[13]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            16.189
+  Slack (ns):            -6.716
+  Arrival (ns):          21.456
+  Required (ns):         14.740
+
+Path 83
+  From:                  hbridgecontroller_0/M2_duty_0[12]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.096
+  Slack (ns):            -6.652
+  Arrival (ns):          21.385
+  Required (ns):         14.733
+
+Path 84
+  From:                  hbridgecontroller_0/M2_duty[16]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            16.060
+  Slack (ns):            -6.629
+  Arrival (ns):          21.362
+  Required (ns):         14.733
+
+Path 85
+  From:                  hbridgecontroller_0/counter[4]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.059
+  Slack (ns):            -6.606
+  Arrival (ns):          21.326
+  Required (ns):         14.720
+
+Path 86
+  From:                  hbridgecontroller_0/counter[5]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            16.022
+  Slack (ns):            -6.569
+  Arrival (ns):          21.289
+  Required (ns):         14.720
+
+Path 87
+  From:                  hbridgecontroller_0/counter[15]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.969
+  Slack (ns):            -6.488
+  Arrival (ns):          21.208
+  Required (ns):         14.720
+
+Path 88
+  From:                  hbridgecontroller_0/counter[16]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.963
+  Slack (ns):            -6.482
+  Arrival (ns):          21.202
+  Required (ns):         14.720
+
+Path 89
+  From:                  hbridgecontroller_0/M1_duty_0[11]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            15.897
+  Slack (ns):            -6.453
+  Arrival (ns):          21.186
+  Required (ns):         14.733
+
+Path 90
+  From:                  hbridgecontroller_0/M1_duty_0[14]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            15.851
+  Slack (ns):            -6.439
+  Arrival (ns):          21.140
+  Required (ns):         14.701
+
+Path 91
+  From:                  hbridgecontroller_0/M2_duty[9]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            15.857
+  Slack (ns):            -6.426
+  Arrival (ns):          21.159
+  Required (ns):         14.733
+
+Path 92
+  From:                  hbridgecontroller_0/counter[12]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.858
+  Slack (ns):            -6.405
+  Arrival (ns):          21.125
+  Required (ns):         14.720
+
+Path 93
+  From:                  hbridgecontroller_0/M1_duty[8]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            15.748
+  Slack (ns):            -6.349
+  Arrival (ns):          21.050
+  Required (ns):         14.701
+
+Path 94
+  From:                  hbridgecontroller_0/counter[3]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.833
+  Slack (ns):            -6.344
+  Arrival (ns):          21.064
+  Required (ns):         14.720
+
+Path 95
+  From:                  hbridgecontroller_0/counter[9]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.792
+  Slack (ns):            -6.339
+  Arrival (ns):          21.059
+  Required (ns):         14.720
+
+Path 96
+  From:                  hbridgecontroller_0/M2_duty_0[14]:CLK
+  To:                    hbridgecontroller_0/PRDATA_1[0]:D
+  Delay (ns):            15.815
+  Slack (ns):            -6.310
+  Arrival (ns):          21.043
+  Required (ns):         14.733
+
+Path 97
+  From:                  hbridgecontroller_0/counter[14]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.760
+  Slack (ns):            -6.307
+  Arrival (ns):          21.027
+  Required (ns):         14.720
+
+Path 98
+  From:                  hbridgecontroller_0/counter[2]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.749
+  Slack (ns):            -6.260
+  Arrival (ns):          20.980
+  Required (ns):         14.720
+
+Path 99
+  From:                  hbridgecontroller_0/counter[17]:CLK
+  To:                    hbridgecontroller_0/motor2_pwm:D
+  Delay (ns):            15.720
+  Slack (ns):            -6.239
+  Arrival (ns):          20.959
+  Required (ns):         14.720
+
+Path 100
+  From:                  hbridgecontroller_0/counter[15]:CLK
+  To:                    hbridgecontroller_0/motor1_pwm:D
+  Delay (ns):            15.682
+  Slack (ns):            -6.181
+  Arrival (ns):          20.921
+  Required (ns):         14.740
+

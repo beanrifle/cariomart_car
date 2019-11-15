@@ -1,0 +1,1602 @@
+#Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
+#install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: EECS373-08
+
+# Thu Nov 14 21:03:46 2019
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q4p1, Build 517R, built Oct 30 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
+@I::"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\smartfusionmss.v" (library work)
+@I::"C:\Users\youngben\Documents\CarioMart\component\work\CarController\CarController.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module CarController
+@W: CG775 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	FAMILY=32'b00000000000000000000000000010010
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|Removing wire CAPB3IlOI, as there is no assignment to it.
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":27:7:27:23|Synthesizing module hbridgecontroller in library work.
+
+	PWM_PERIOD=32'b00000000000000110000110101000000
+   Generated name = hbridgecontroller_200000s
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:42|Synthesizing module smartfusionmss_tmp_MSS_CCC_0_MSS_CCC in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\smartfusionmss.v":9:7:9:20|Synthesizing module smartfusionmss in library work.
+
+@N: CG364 :"C:\Users\youngben\Documents\CarioMart\component\work\CarController\CarController.v":9:7:9:19|Synthesizing module CarController in library work.
+
+@W: CL157 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[18] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[19] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[20] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[21] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[22] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[23] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[24] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[25] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[26] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[27] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[28] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[29] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[30] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Register bit counter[31] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[18] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[19] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[20] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[21] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[22] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[23] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[24] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[25] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[26] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[27] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[28] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[29] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[30] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M1_duty[31] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[18] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[19] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[20] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[21] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[22] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[23] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[24] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[25] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[26] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[27] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[28] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[29] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[30] is always 0.
+@N: CL189 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit M2_duty[31] is always 0.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 31 to 18 of M2_duty[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 31 to 18 of M1_duty[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":74:0:74:5|Pruning register bits 31 to 18 of counter[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bits 31 to 20 of PRDATA[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL257 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Register bit 19 always 0, optimizing ...
+@W: CL260 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":91:0:91:5|Pruning register bit 19 of PRDATA[19:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL246 :"C:\Users\youngben\Documents\CarioMart\hdl\hbridgecontroller.v":36:13:36:17|Input port bits 31 to 16 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\youngben\Documents\CarioMart\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 84MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 21:03:46 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 21:03:47 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 21:03:47 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
+@N|Running in 64-bit mode
+File C:\Users\youngben\Documents\CarioMart\synthesis\synwork\CarController_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 21:03:48 2019
+
+###########################################################]
+# Thu Nov 14 21:03:48 2019
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell_syn.sdc
+@L: C:\Users\youngben\Documents\CarioMart\synthesis\CarController_scck.rpt 
+Printing clock  summary report in "C:\Users\youngben\Documents\CarioMart\synthesis\CarController_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Clock Summary
+*****************
+
+Start       Requested     Requested     Clock        Clock           Clock
+Clock       Frequency     Period        Type         Group           Load 
+--------------------------------------------------------------------------
+FAB_CLK     100.0 MHz     10.000        declared     clk_group_0     79   
+FCLK        100.0 MHz     10.000        declared     clk_group_0     0    
+==========================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\youngben\Documents\CarioMart\synthesis\CarController.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 21:03:48 2019
+
+###########################################################]
+# Thu Nov 14 21:03:48 2019
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-SP1-5
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\youngben\documents\cariomart\component\work\smartfusionmss\mss_ccc_0\smartfusionmss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.smartfusionmss_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MF236 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":139:38:139:59|Generating a type div divider 
+@N: MF236 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":131:38:131:59|Generating a type div divider 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF179 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":85:8:85:26|Found 18 by 18 bit less-than operator ('<') un1_counter_2 (in view: work.hbridgecontroller_200000s(verilog))
+@N: MF238 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":78:19:78:30|Found 18-bit incrementor, 'un2_counter_1[17:0]'
+@N: MF179 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":81:8:81:26|Found 18 by 18 bit less-than operator ('<') un1_counter_1 (in view: work.hbridgecontroller_200000s(verilog))
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit PRDATA_1[18] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit PRDATA_1[17] (in view view:work.hbridgecontroller_200000s(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 124MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 133MB)
+
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[16] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[15] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[14] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[13] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[12] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[11] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[10] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[9] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[8] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[7] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 135MB)
+
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[6] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[5] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[4] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[3] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[2] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\youngben\documents\cariomart\hdl\hbridgecontroller.v":91:0:91:5|Register bit hbridgecontroller_0.PRDATA_1[1] (in view view:work.CarController(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 137MB peak: 150MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 138MB peak: 150MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 183MB peak: 183MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 182MB peak: 183MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 182MB peak: 183MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 167MB peak: 211MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                      Fanout, notes
+-------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST / M2FRESETn     98           
+hbridgecontroller_0.M1_duty[10] / Q             25           
+hbridgecontroller_0.M1_duty[11] / Q             28           
+hbridgecontroller_0.M1_duty[12] / Q             30           
+hbridgecontroller_0.M1_duty[13] / Q             30           
+hbridgecontroller_0.M1_duty[14] / Q             30           
+hbridgecontroller_0.M2_duty[11] / Q             29           
+hbridgecontroller_0.M2_duty[12] / Q             29           
+hbridgecontroller_0.M2_duty[13] / Q             35           
+hbridgecontroller_0.M2_duty[14] / Q             37           
+hbridgecontroller_0.M2_duty[15] / Q             31           
+hbridgecontroller_0.M1SPEED_WRITE / Y           36           
+=============================================================
+
+@N: FP130 |Promoting Net smartfusionmss_0_M2F_RESET_N on CLKINT  I_264 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 168MB peak: 211MB)
+
+Replicating Combinational Instance hbridgecontroller_0.M1SPEED_WRITE, fanout 36 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M2_duty[15], fanout 31 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M2_duty[14], fanout 37 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M2_duty[13], fanout 35 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M2_duty[12], fanout 29 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M2_duty[11], fanout 29 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M1_duty[14], fanout 30 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M1_duty[13], fanout 30 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M1_duty[12], fanout 30 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M1_duty[11], fanout 28 segments 2
+Replicating Sequential Instance hbridgecontroller_0.M1_duty[10], fanout 25 segments 2
+
+Added 0 Buffers
+Added 11 Cells via replication
+	Added 10 Sequential Cells via replication
+	Added 1 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 168MB peak: 211MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 71 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+========================================= Non-Gated/Non-Generated Clocks ==========================================
+Clock Tree ID     Driving Element      Drive Element Type                Fanout     Sample Instance                
+-------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       smartfusionmss_0     clock definition on hierarchy     71         hbridgecontroller_0.counter[17]
+===================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 154MB peak: 211MB)
+
+Writing Analyst data base C:\Users\youngben\Documents\CarioMart\synthesis\synwork\CarController_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 155MB peak: 211MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-SP1-5
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 156MB peak: 211MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 156MB peak: 211MB)
+
+@N: MT615 |Found clock FCLK with period 10.00ns 
+@N: MT615 |Found clock FAB_CLK with period 10.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 14 21:04:00 2019
+#
+
+
+Top view:               CarController
+Library name:           smartfusion
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    C:\Users\youngben\Documents\CarioMart\component\work\smartfusionmss\mss_tshell_syn.sdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -19.456
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group          
+------------------------------------------------------------------------------------------------------------------
+FAB_CLK            100.0 MHz     51.8 MHz      10.000        19.296        -9.296     declared     clk_group_0    
+FCLK               100.0 MHz     NA            10.000        NA            NA         declared     clk_group_0    
+System             100.0 MHz     219.6 MHz     10.000        4.553         5.447      system       system_clkgroup
+==================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------
+System    System   |  10.000      5.447    |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  10.000      -19.456  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  10.000      8.106    |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  10.000      -9.296   |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                      Starting                                         Arrival           
+Instance                              Reference     Type     Pin     Net               Time        Slack 
+                                      Clock                                                              
+---------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M1_duty[15]       FAB_CLK       DFN1     Q       M1_duty[15]       0.737       -9.296
+hbridgecontroller_0.M1_duty[14]       FAB_CLK       DFN1     Q       M1_duty[14]       0.737       -8.919
+hbridgecontroller_0.M2_duty[16]       FAB_CLK       DFN1     Q       M2_duty[16]       0.737       -8.594
+hbridgecontroller_0.M1_duty[13]       FAB_CLK       DFN1     Q       M1_duty[13]       0.737       -8.545
+hbridgecontroller_0.M1_duty[12]       FAB_CLK       DFN1     Q       M1_duty[12]       0.580       -8.472
+hbridgecontroller_0.M2_duty[15]       FAB_CLK       DFN1     Q       M2_duty[15]       0.737       -8.397
+hbridgecontroller_0.M1_duty_0[10]     FAB_CLK       DFN1     Q       M1_duty_0[10]     0.737       -8.204
+hbridgecontroller_0.M2_duty[11]       FAB_CLK       DFN1     Q       M2_duty[11]       0.737       -8.152
+hbridgecontroller_0.M2_duty[10]       FAB_CLK       DFN1     Q       M2_duty[10]       0.737       -8.147
+hbridgecontroller_0.M1_duty_0[11]     FAB_CLK       DFN1     Q       M1_duty_0[11]     0.737       -8.085
+=========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                           Required           
+Instance                            Reference     Type       Pin     Net               Time         Slack 
+                                    Clock                                                                 
+----------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.PRDATA_1[0]     FAB_CLK       DFN1E0     D       PRDATA_7[0]       9.427        -9.296
+hbridgecontroller_0.motor1_pwm      FAB_CLK       DFN1       D       motor1_pwm4       9.461        -6.672
+hbridgecontroller_0.motor2_pwm      FAB_CLK       DFN1       D       motor2_pwm6       9.461        -6.672
+hbridgecontroller_0.counter[16]     FAB_CLK       DFN1       D       counter_3[16]     9.461        -0.511
+hbridgecontroller_0.counter[17]     FAB_CLK       DFN1       D       counter_3[17]     9.461        -0.511
+hbridgecontroller_0.counter[11]     FAB_CLK       DFN1       D       counter_3[11]     9.461        -0.369
+hbridgecontroller_0.counter[12]     FAB_CLK       DFN1       D       I_35              9.461        0.455 
+hbridgecontroller_0.counter[15]     FAB_CLK       DFN1       D       I_43              9.461        0.476 
+hbridgecontroller_0.counter[13]     FAB_CLK       DFN1       D       I_37              9.461        0.619 
+hbridgecontroller_0.counter[14]     FAB_CLK       DFN1       D       I_40              9.461        0.619 
+==========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.722
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -9.296
+
+    Number of logic level(s):                11
+    Starting point:                          hbridgecontroller_0.M1_duty[15] / Q
+    Ending point:                            hbridgecontroller_0.PRDATA_1[0] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                                         Pin      Pin               Arrival     No. of    
+Name                                                                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M1_duty[15]                                                             DFN1       Q        Out     0.737     0.737       -         
+M1_duty[15]                                                                                 Net        -        -       2.466     -           24        
+hbridgecontroller_0.M1_duty_RNID3QE[15]                                                     NOR2B      A        In      -         3.203       -         
+hbridgecontroller_0.M1_duty_RNID3QE[15]                                                     NOR2B      Y        Out     0.514     3.717       -         
+M1_duty_2[15]                                                                               Net        -        -       1.669     -           9         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y          AX1B       B        In      -         5.386       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y          AX1B       Y        Out     1.001     6.387       -         
+mult1_un74_sum_i[8]                                                                         Net        -        -       1.423     -           6         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y          XNOR2      B        In      -         7.810       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y          XNOR2      Y        Out     0.937     8.747       -         
+mult1_un81_sum[9]                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                       XOR2       B        In      -         9.069       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                       XOR2       Y        Out     0.937     10.005      -         
+mult1_un102_sum[12]                                                                         Net        -        -       0.386     -           2         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y         AX1C       C        In      -         10.391      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y         AX1C       Y        Out     0.488     10.879      -         
+mult1_un109_sum[13]                                                                         Net        -        -       1.279     -           5         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I68_un1_Y     NOR3C      C        In      -         12.159      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I68_un1_Y     NOR3C      Y        Out     0.666     12.824      -         
+I68_un1_Y                                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y         AX1D       A        In      -         13.146      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y         AX1D       Y        Out     1.001     14.147      -         
+mult1_un116_sum[15]                                                                         Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s      AX1D       A        In      -         14.468      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s      AX1D       Y        Out     1.001     15.469      -         
+ADD_20x20_fast_I101_Y_out                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                       XA1B       A        In      -         15.791      -         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                       XA1B       Y        Out     0.791     16.581      -         
+PRDATA_m3_i_a3_0                                                                            Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                       AO1A       B        In      -         16.903      -         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                       AO1A       Y        Out     0.598     17.501      -         
+PRDATA_1_RNO_1[0]                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                         MX2        A        In      -         17.822      -         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                         MX2        Y        Out     0.579     18.401      -         
+PRDATA_7[0]                                                                                 Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1[0]                                                             DFN1E0     D        In      -         18.722      -         
+========================================================================================================================================================
+Total path delay (propagation time + setup) of 19.296 is 9.822(50.9%) logic and 9.474(49.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.672
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -9.245
+
+    Number of logic level(s):                11
+    Starting point:                          hbridgecontroller_0.M1_duty[15] / Q
+    Ending point:                            hbridgecontroller_0.PRDATA_1[0] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                                        Pin      Pin               Arrival     No. of    
+Name                                                                                       Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M1_duty[15]                                                            DFN1       Q        Out     0.737     0.737       -         
+M1_duty[15]                                                                                Net        -        -       2.466     -           24        
+hbridgecontroller_0.M1_duty_RNID3QE[15]                                                    NOR2B      A        In      -         3.203       -         
+hbridgecontroller_0.M1_duty_RNID3QE[15]                                                    NOR2B      Y        Out     0.514     3.717       -         
+M1_duty_2[15]                                                                              Net        -        -       1.669     -           9         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y         AX1B       B        In      -         5.386       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y         AX1B       Y        Out     1.001     6.387       -         
+mult1_un74_sum_i[8]                                                                        Net        -        -       1.423     -           6         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y         XNOR2      B        In      -         7.810       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y         XNOR2      Y        Out     0.937     8.747       -         
+mult1_un81_sum[9]                                                                          Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                      XOR2       B        In      -         9.069       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                      XOR2       Y        Out     0.937     10.005      -         
+mult1_un102_sum[12]                                                                        Net        -        -       0.386     -           2         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y        AX1C       C        In      -         10.391      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y        AX1C       Y        Out     0.488     10.879      -         
+mult1_un109_sum[13]                                                                        Net        -        -       1.279     -           5         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_m3_0_a2                 NOR3B      B        In      -         12.159      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_m3_0_a2                 NOR3B      Y        Out     0.624     12.783      -         
+ADD_20x20_fast_I82_Y_0_1                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y        AX1D       B        In      -         13.104      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y        AX1D       Y        Out     0.992     14.096      -         
+mult1_un116_sum[15]                                                                        Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s     AX1D       A        In      -         14.418      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s     AX1D       Y        Out     1.001     15.419      -         
+ADD_20x20_fast_I101_Y_out                                                                  Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                      XA1B       A        In      -         15.740      -         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                      XA1B       Y        Out     0.791     16.531      -         
+PRDATA_m3_i_a3_0                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                      AO1A       B        In      -         16.852      -         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                      AO1A       Y        Out     0.598     17.450      -         
+PRDATA_1_RNO_1[0]                                                                          Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                        MX2        A        In      -         17.772      -         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                        MX2        Y        Out     0.579     18.351      -         
+PRDATA_7[0]                                                                                Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1[0]                                                            DFN1E0     D        In      -         18.672      -         
+=======================================================================================================================================================
+Total path delay (propagation time + setup) of 19.246 is 9.772(50.8%) logic and 9.474(49.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.345
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -8.919
+
+    Number of logic level(s):                11
+    Starting point:                          hbridgecontroller_0.M1_duty[14] / Q
+    Ending point:                            hbridgecontroller_0.PRDATA_1[0] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                                         Pin      Pin               Arrival     No. of    
+Name                                                                                        Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M1_duty[14]                                                             DFN1       Q        Out     0.737     0.737       -         
+M1_duty[14]                                                                                 Net        -        -       2.127     -           15        
+hbridgecontroller_0.M1_duty_RNIC2QE[14]                                                     NOR2B      A        In      -         2.864       -         
+hbridgecontroller_0.M1_duty_RNIC2QE[14]                                                     NOR2B      Y        Out     0.514     3.379       -         
+M1_duty_2[14]                                                                               Net        -        -       1.639     -           8         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y          AX1B       A        In      -         5.018       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y          AX1B       Y        Out     0.992     6.010       -         
+mult1_un74_sum_i[8]                                                                         Net        -        -       1.423     -           6         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y          XNOR2      B        In      -         7.433       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y          XNOR2      Y        Out     0.937     8.370       -         
+mult1_un81_sum[9]                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                       XOR2       B        In      -         8.691       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                       XOR2       Y        Out     0.937     9.628       -         
+mult1_un102_sum[12]                                                                         Net        -        -       0.386     -           2         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y         AX1C       C        In      -         10.014      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y         AX1C       Y        Out     0.488     10.502      -         
+mult1_un109_sum[13]                                                                         Net        -        -       1.279     -           5         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I68_un1_Y     NOR3C      C        In      -         11.781      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I68_un1_Y     NOR3C      Y        Out     0.666     12.447      -         
+I68_un1_Y                                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y         AX1D       A        In      -         12.769      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y         AX1D       Y        Out     1.001     13.770      -         
+mult1_un116_sum[15]                                                                         Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s      AX1D       A        In      -         14.091      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s      AX1D       Y        Out     1.001     15.092      -         
+ADD_20x20_fast_I101_Y_out                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                       XA1B       A        In      -         15.414      -         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                       XA1B       Y        Out     0.791     16.204      -         
+PRDATA_m3_i_a3_0                                                                            Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                       AO1A       B        In      -         16.526      -         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                       AO1A       Y        Out     0.598     17.124      -         
+PRDATA_1_RNO_1[0]                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                         MX2        A        In      -         17.445      -         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                         MX2        Y        Out     0.579     18.024      -         
+PRDATA_7[0]                                                                                 Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1[0]                                                             DFN1E0     D        In      -         18.345      -         
+========================================================================================================================================================
+Total path delay (propagation time + setup) of 18.919 is 9.814(51.9%) logic and 9.105(48.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.295
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -8.868
+
+    Number of logic level(s):                11
+    Starting point:                          hbridgecontroller_0.M1_duty[14] / Q
+    Ending point:                            hbridgecontroller_0.PRDATA_1[0] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                                        Pin      Pin               Arrival     No. of    
+Name                                                                                       Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M1_duty[14]                                                            DFN1       Q        Out     0.737     0.737       -         
+M1_duty[14]                                                                                Net        -        -       2.127     -           15        
+hbridgecontroller_0.M1_duty_RNIC2QE[14]                                                    NOR2B      A        In      -         2.864       -         
+hbridgecontroller_0.M1_duty_RNIC2QE[14]                                                    NOR2B      Y        Out     0.514     3.379       -         
+M1_duty_2[14]                                                                              Net        -        -       1.639     -           8         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y         AX1B       A        In      -         5.018       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y         AX1B       Y        Out     0.992     6.010       -         
+mult1_un74_sum_i[8]                                                                        Net        -        -       1.423     -           6         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y         XNOR2      B        In      -         7.433       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y         XNOR2      Y        Out     0.937     8.370       -         
+mult1_un81_sum[9]                                                                          Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                      XOR2       B        In      -         8.691       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                      XOR2       Y        Out     0.937     9.628       -         
+mult1_un102_sum[12]                                                                        Net        -        -       0.386     -           2         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y        AX1C       C        In      -         10.014      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y        AX1C       Y        Out     0.488     10.502      -         
+mult1_un109_sum[13]                                                                        Net        -        -       1.279     -           5         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_m3_0_a2                 NOR3B      B        In      -         11.781      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_m3_0_a2                 NOR3B      Y        Out     0.624     12.405      -         
+ADD_20x20_fast_I82_Y_0_1                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y        AX1D       B        In      -         12.727      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un116_sum.ADD_20x20_fast_I99_Y        AX1D       Y        Out     0.992     13.719      -         
+mult1_un116_sum[15]                                                                        Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s     AX1D       A        In      -         14.041      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s     AX1D       Y        Out     1.001     15.042      -         
+ADD_20x20_fast_I101_Y_out                                                                  Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                      XA1B       A        In      -         15.363      -         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                      XA1B       Y        Out     0.791     16.154      -         
+PRDATA_m3_i_a3_0                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                      AO1A       B        In      -         16.475      -         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                      AO1A       Y        Out     0.598     17.073      -         
+PRDATA_1_RNO_1[0]                                                                          Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                        MX2        A        In      -         17.395      -         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                        MX2        Y        Out     0.579     17.973      -         
+PRDATA_7[0]                                                                                Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1[0]                                                            DFN1E0     D        In      -         18.295      -         
+=======================================================================================================================================================
+Total path delay (propagation time + setup) of 18.868 is 9.763(51.7%) logic and 9.105(48.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      18.201
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -8.774
+
+    Number of logic level(s):                11
+    Starting point:                          hbridgecontroller_0.M1_duty[15] / Q
+    Ending point:                            hbridgecontroller_0.PRDATA_1[0] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                                        Pin      Pin               Arrival     No. of    
+Name                                                                                       Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M1_duty[15]                                                            DFN1       Q        Out     0.737     0.737       -         
+M1_duty[15]                                                                                Net        -        -       2.466     -           24        
+hbridgecontroller_0.M1_duty_RNID3QE[15]                                                    NOR2B      A        In      -         3.203       -         
+hbridgecontroller_0.M1_duty_RNID3QE[15]                                                    NOR2B      Y        Out     0.514     3.717       -         
+M1_duty_2[15]                                                                              Net        -        -       1.669     -           9         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y         AX1B       B        In      -         5.386       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un74_sum.ADD_20x20_fast_I92_Y         AX1B       Y        Out     1.001     6.387       -         
+mult1_un74_sum_i[8]                                                                        Net        -        -       1.423     -           6         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y         XNOR2      B        In      -         7.810       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un81_sum.ADD_20x20_fast_I93_Y         XNOR2      Y        Out     0.937     8.747       -         
+mult1_un81_sum[9]                                                                          Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                      XOR2       B        In      -         9.069       -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un102_sum.ADD_m5                      XOR2       Y        Out     0.937     10.005      -         
+mult1_un102_sum[12]                                                                        Net        -        -       0.386     -           2         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y        AX1C       C        In      -         10.391      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un109_sum.ADD_20x20_fast_I97_Y        AX1C       Y        Out     0.488     10.879      -         
+mult1_un109_sum[13]                                                                        Net        -        -       1.279     -           5         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_m3_1                    AX1        C        In      -         12.159      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_m3_1                    AX1        Y        Out     0.488     12.647      -         
+ADD_m3_1                                                                                   Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_m5                      NOR3C      C        In      -         12.968      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_m5                      NOR3C      Y        Out     0.666     13.634      -         
+ADD_20x20_fast_I80_Y_0                                                                     Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s     AX1D       B        In      -         13.956      -         
+hbridgecontroller_0.PRDATA_2.if_generate_plus\.mult1_un123_sum.ADD_20x20_fast_I101_Y_s     AX1D       Y        Out     0.992     14.948      -         
+ADD_20x20_fast_I101_Y_out                                                                  Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                      XA1B       A        In      -         15.269      -         
+hbridgecontroller_0.PRDATA_1_RNO_6[0]                                                      XA1B       Y        Out     0.791     16.060      -         
+PRDATA_m3_i_a3_0                                                                           Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                      AO1A       B        In      -         16.381      -         
+hbridgecontroller_0.PRDATA_1_RNO_1[0]                                                      AO1A       Y        Out     0.598     16.979      -         
+PRDATA_1_RNO_1[0]                                                                          Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                        MX2        A        In      -         17.301      -         
+hbridgecontroller_0.PRDATA_1_RNO[0]                                                        MX2        Y        Out     0.579     17.880      -         
+PRDATA_7[0]                                                                                Net        -        -       0.322     -           1         
+hbridgecontroller_0.PRDATA_1[0]                                                            DFN1E0     D        In      -         18.201      -         
+=======================================================================================================================================================
+Total path delay (propagation time + setup) of 18.775 is 9.301(49.5%) logic and 9.474(50.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                                                         Arrival            
+Instance                            Reference     Type        Pin               Net                                  Time        Slack  
+                                    Clock                                                                                               
+----------------------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[14]     CoreAPB3_0_APBmslave0_PWDATA[14]     0.000       -19.456
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[12]     CoreAPB3_0_APBmslave0_PWDATA[12]     0.000       -19.433
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[10]     CoreAPB3_0_APBmslave0_PWDATA[10]     0.000       -18.641
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]      CoreAPB3_0_APBmslave0_PWDATA[3]      0.000       -17.805
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[4]      CoreAPB3_0_APBmslave0_PWDATA[4]      0.000       -17.640
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[6]      CoreAPB3_0_APBmslave0_PWDATA[6]      0.000       -17.560
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[11]     CoreAPB3_0_APBmslave0_PWDATA[11]     0.000       -17.537
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[8]      CoreAPB3_0_APBmslave0_PWDATA[8]      0.000       -17.528
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]      CoreAPB3_0_APBmslave0_PWDATA[2]      0.000       -17.454
+smartfusionmss_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[1]      CoreAPB3_0_APBmslave0_PWDATA[1]      0.000       -17.452
+========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                         Required            
+Instance                              Reference     Type     Pin     Net               Time         Slack  
+                                      Clock                                                                
+-----------------------------------------------------------------------------------------------------------
+hbridgecontroller_0.M2_duty[11]       System        DFN1     D       M2_duty_5[11]     9.427        -19.456
+hbridgecontroller_0.M2_duty_0[11]     System        DFN1     D       M2_duty_5[11]     9.427        -19.456
+hbridgecontroller_0.M2_duty[6]        System        DFN1     D       M2_duty_5[6]      9.427        -19.392
+hbridgecontroller_0.M2_duty[8]        System        DFN1     D       M2_duty_5[8]      9.427        -19.392
+hbridgecontroller_0.M2_duty[10]       System        DFN1     D       M2_duty_5[10]     9.427        -19.392
+hbridgecontroller_0.M2_duty[16]       System        DFN1     D       M2_duty_5[16]     9.427        -19.392
+hbridgecontroller_0.M2_duty[17]       System        DFN1     D       M2_duty_5[17]     9.427        -19.392
+hbridgecontroller_0.M2_duty[12]       System        DFN1     D       M2_duty_5[12]     9.461        -19.181
+hbridgecontroller_0.M2_duty[13]       System        DFN1     D       M2_duty_5[13]     9.461        -19.181
+hbridgecontroller_0.M2_duty[14]       System        DFN1     D       M2_duty_5[14]     9.461        -19.181
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      28.882
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -19.456
+
+    Number of logic level(s):                22
+    Starting point:                          smartfusionmss_0.MSS_ADLIB_INST / MSSPWDATA[14]
+    Ending point:                            hbridgecontroller_0.M2_duty[11] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                  Pin               Pin               Arrival     No. of    
+Name                                                                Type        Name              Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST                                     MSS_APB     MSSPWDATA[14]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[14]                                    Net         -                 -       2.082     -           14        
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       B                 In      -         2.082       -         
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       Y                 Out     0.627     2.709       -         
+un7_M1_duty_0_74                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         C                 In      -         3.031       -         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         Y                 Out     0.633     3.664       -         
+un7_M1_duty_0_130_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         A                 In      -         3.985       -         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         Y                 Out     0.507     4.492       -         
+N_633                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        B                 In      -         4.878       -         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        Y                 Out     0.937     5.815       -         
+un7_M1_duty_0_156_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        A                 In      -         6.136       -         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        Y                 Out     0.488     6.625       -         
+N_644                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        A                 In      -         7.011       -         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        Y                 Out     0.488     7.499       -         
+un7_M1_duty_0_161_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        A                 In      -         7.820       -         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        Y                 Out     0.408     8.229       -         
+N_646                                                               Net         -                 -       1.184     -           4         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         A                 In      -         9.412       -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         Y                 Out     0.507     9.920       -         
+N339                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       A                 In      -         10.306      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       Y                 Out     0.514     10.820      -         
+N394                                                                Net         -                 -       1.279     -           5         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       B                 In      -         12.099      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       Y                 Out     0.627     12.727      -         
+N445                                                                Net         -                 -       0.806     -           3         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       B                 In      -         13.533      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       Y                 Out     0.627     14.160      -         
+I121_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         A                 In      -         14.482      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         Y                 Out     0.507     14.989      -         
+N494                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       B                 In      -         15.375      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       Y                 Out     0.627     16.003      -         
+I143_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         C                 In      -         16.324      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         Y                 Out     0.751     17.075      -         
+ADD_24x24_fast_I143_Y_2                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         B                 In      -         17.396      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         Y                 Out     0.646     18.043      -         
+N528                                                                Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        B                 In      -         18.364      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        Y                 Out     0.937     19.301      -         
+ADD_24x24_fast_I218_Y_0                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        A                 In      -         19.622      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        Y                 Out     0.408     20.031      -         
+un7_M1_duty[25]                                                     Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         C                 In      -         20.352      -         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         Y                 Out     0.490     20.843      -         
+M1_duty24lto23_0                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         C                 In      -         21.164      -         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         Y                 Out     0.633     21.797      -         
+M1_duty24lto23_3                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         B                 In      -         22.118      -         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         Y                 Out     0.646     22.765      -         
+M1_duty24                                                           Net         -                 -       2.308     -           19        
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       A                 In      -         25.073      -         
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       Y                 Out     0.514     25.587      -         
+M2_duty_5_sn_N_2                                                    Net         -                 -       2.263     -           18        
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         B                 In      -         27.850      -         
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         Y                 Out     0.646     28.497      -         
+M2_duty_5[11]                                                       Net         -                 -       0.386     -           2         
+hbridgecontroller_0.M2_duty[11]                                     DFN1        D                 In      -         28.882      -         
+==========================================================================================================================================
+Total path delay (propagation time + setup) of 29.456 is 13.746(46.7%) logic and 15.709(53.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      28.882
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     -19.456
+
+    Number of logic level(s):                22
+    Starting point:                          smartfusionmss_0.MSS_ADLIB_INST / MSSPWDATA[14]
+    Ending point:                            hbridgecontroller_0.M2_duty_0[11] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                  Pin               Pin               Arrival     No. of    
+Name                                                                Type        Name              Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST                                     MSS_APB     MSSPWDATA[14]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[14]                                    Net         -                 -       2.082     -           14        
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       B                 In      -         2.082       -         
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       Y                 Out     0.627     2.709       -         
+un7_M1_duty_0_74                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         C                 In      -         3.031       -         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         Y                 Out     0.633     3.664       -         
+un7_M1_duty_0_130_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         A                 In      -         3.985       -         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         Y                 Out     0.507     4.492       -         
+N_633                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        B                 In      -         4.878       -         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        Y                 Out     0.937     5.815       -         
+un7_M1_duty_0_156_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        A                 In      -         6.136       -         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        Y                 Out     0.488     6.625       -         
+N_644                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        A                 In      -         7.011       -         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        Y                 Out     0.488     7.499       -         
+un7_M1_duty_0_161_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        A                 In      -         7.820       -         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        Y                 Out     0.408     8.229       -         
+N_646                                                               Net         -                 -       1.184     -           4         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         A                 In      -         9.412       -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         Y                 Out     0.507     9.920       -         
+N339                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       A                 In      -         10.306      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       Y                 Out     0.514     10.820      -         
+N394                                                                Net         -                 -       1.279     -           5         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       B                 In      -         12.099      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       Y                 Out     0.627     12.727      -         
+N445                                                                Net         -                 -       0.806     -           3         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       B                 In      -         13.533      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       Y                 Out     0.627     14.160      -         
+I121_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         A                 In      -         14.482      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         Y                 Out     0.507     14.989      -         
+N494                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       B                 In      -         15.375      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       Y                 Out     0.627     16.003      -         
+I143_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         C                 In      -         16.324      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         Y                 Out     0.751     17.075      -         
+ADD_24x24_fast_I143_Y_2                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         B                 In      -         17.396      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         Y                 Out     0.646     18.043      -         
+N528                                                                Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        B                 In      -         18.364      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        Y                 Out     0.937     19.301      -         
+ADD_24x24_fast_I218_Y_0                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        A                 In      -         19.622      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        Y                 Out     0.408     20.031      -         
+un7_M1_duty[25]                                                     Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         C                 In      -         20.352      -         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         Y                 Out     0.490     20.843      -         
+M1_duty24lto23_0                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         C                 In      -         21.164      -         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         Y                 Out     0.633     21.797      -         
+M1_duty24lto23_3                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         B                 In      -         22.118      -         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         Y                 Out     0.646     22.765      -         
+M1_duty24                                                           Net         -                 -       2.308     -           19        
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       A                 In      -         25.073      -         
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       Y                 Out     0.514     25.587      -         
+M2_duty_5_sn_N_2                                                    Net         -                 -       2.263     -           18        
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         B                 In      -         27.850      -         
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         Y                 Out     0.646     28.497      -         
+M2_duty_5[11]                                                       Net         -                 -       0.386     -           2         
+hbridgecontroller_0.M2_duty_0[11]                                   DFN1        D                 In      -         28.882      -         
+==========================================================================================================================================
+Total path delay (propagation time + setup) of 29.456 is 13.746(46.7%) logic and 15.709(53.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      28.860
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -19.433
+
+    Number of logic level(s):                22
+    Starting point:                          smartfusionmss_0.MSS_ADLIB_INST / MSSPWDATA[12]
+    Ending point:                            hbridgecontroller_0.M2_duty[11] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                  Pin               Pin               Arrival     No. of    
+Name                                                                Type        Name              Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST                                     MSS_APB     MSSPWDATA[12]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[12]                                    Net         -                 -       2.172     -           16        
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       A                 In      -         2.172       -         
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       Y                 Out     0.514     2.687       -         
+un7_M1_duty_0_74                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         C                 In      -         3.008       -         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         Y                 Out     0.633     3.641       -         
+un7_M1_duty_0_130_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         A                 In      -         3.962       -         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         Y                 Out     0.507     4.470       -         
+N_633                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        B                 In      -         4.856       -         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        Y                 Out     0.937     5.792       -         
+un7_M1_duty_0_156_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        A                 In      -         6.114       -         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        Y                 Out     0.488     6.602       -         
+N_644                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        A                 In      -         6.988       -         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        Y                 Out     0.488     7.476       -         
+un7_M1_duty_0_161_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        A                 In      -         7.798       -         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        Y                 Out     0.408     8.206       -         
+N_646                                                               Net         -                 -       1.184     -           4         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         A                 In      -         9.390       -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         Y                 Out     0.507     9.897       -         
+N339                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       A                 In      -         10.283      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       Y                 Out     0.514     10.797      -         
+N394                                                                Net         -                 -       1.279     -           5         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       B                 In      -         12.077      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       Y                 Out     0.627     12.704      -         
+N445                                                                Net         -                 -       0.806     -           3         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       B                 In      -         13.510      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       Y                 Out     0.627     14.138      -         
+I121_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         A                 In      -         14.459      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         Y                 Out     0.507     14.967      -         
+N494                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       B                 In      -         15.352      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       Y                 Out     0.627     15.980      -         
+I143_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         C                 In      -         16.301      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         Y                 Out     0.751     17.052      -         
+ADD_24x24_fast_I143_Y_2                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         B                 In      -         17.374      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         Y                 Out     0.646     18.020      -         
+N528                                                                Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        B                 In      -         18.342      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        Y                 Out     0.937     19.278      -         
+ADD_24x24_fast_I218_Y_0                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        A                 In      -         19.600      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        Y                 Out     0.408     20.008      -         
+un7_M1_duty[25]                                                     Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         C                 In      -         20.330      -         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         Y                 Out     0.490     20.820      -         
+M1_duty24lto23_0                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         C                 In      -         21.141      -         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         Y                 Out     0.633     21.774      -         
+M1_duty24lto23_3                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         B                 In      -         22.096      -         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         Y                 Out     0.646     22.742      -         
+M1_duty24                                                           Net         -                 -       2.308     -           19        
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       A                 In      -         25.050      -         
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       Y                 Out     0.514     25.564      -         
+M2_duty_5_sn_N_2                                                    Net         -                 -       2.263     -           18        
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         B                 In      -         27.827      -         
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         Y                 Out     0.646     28.474      -         
+M2_duty_5[11]                                                       Net         -                 -       0.386     -           2         
+hbridgecontroller_0.M2_duty[11]                                     DFN1        D                 In      -         28.860      -         
+==========================================================================================================================================
+Total path delay (propagation time + setup) of 29.433 is 13.633(46.3%) logic and 15.800(53.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      28.860
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -19.433
+
+    Number of logic level(s):                22
+    Starting point:                          smartfusionmss_0.MSS_ADLIB_INST / MSSPWDATA[12]
+    Ending point:                            hbridgecontroller_0.M2_duty_0[11] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                  Pin               Pin               Arrival     No. of    
+Name                                                                Type        Name              Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST                                     MSS_APB     MSSPWDATA[12]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[12]                                    Net         -                 -       2.172     -           16        
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       A                 In      -         2.172       -         
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       Y                 Out     0.514     2.687       -         
+un7_M1_duty_0_74                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         C                 In      -         3.008       -         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         Y                 Out     0.633     3.641       -         
+un7_M1_duty_0_130_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         A                 In      -         3.962       -         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         Y                 Out     0.507     4.470       -         
+N_633                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        B                 In      -         4.856       -         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        Y                 Out     0.937     5.792       -         
+un7_M1_duty_0_156_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        A                 In      -         6.114       -         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        Y                 Out     0.488     6.602       -         
+N_644                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        A                 In      -         6.988       -         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        Y                 Out     0.488     7.476       -         
+un7_M1_duty_0_161_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        A                 In      -         7.798       -         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        Y                 Out     0.408     8.206       -         
+N_646                                                               Net         -                 -       1.184     -           4         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         A                 In      -         9.390       -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         Y                 Out     0.507     9.897       -         
+N339                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       A                 In      -         10.283      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       Y                 Out     0.514     10.797      -         
+N394                                                                Net         -                 -       1.279     -           5         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       B                 In      -         12.077      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       Y                 Out     0.627     12.704      -         
+N445                                                                Net         -                 -       0.806     -           3         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       B                 In      -         13.510      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       Y                 Out     0.627     14.138      -         
+I121_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         A                 In      -         14.459      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         Y                 Out     0.507     14.967      -         
+N494                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       B                 In      -         15.352      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       Y                 Out     0.627     15.980      -         
+I143_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         C                 In      -         16.301      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         Y                 Out     0.751     17.052      -         
+ADD_24x24_fast_I143_Y_2                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         B                 In      -         17.374      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         Y                 Out     0.646     18.020      -         
+N528                                                                Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        B                 In      -         18.342      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        Y                 Out     0.937     19.278      -         
+ADD_24x24_fast_I218_Y_0                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        A                 In      -         19.600      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        Y                 Out     0.408     20.008      -         
+un7_M1_duty[25]                                                     Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         C                 In      -         20.330      -         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         Y                 Out     0.490     20.820      -         
+M1_duty24lto23_0                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         C                 In      -         21.141      -         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         Y                 Out     0.633     21.774      -         
+M1_duty24lto23_3                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         B                 In      -         22.096      -         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         Y                 Out     0.646     22.742      -         
+M1_duty24                                                           Net         -                 -       2.308     -           19        
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       A                 In      -         25.050      -         
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       Y                 Out     0.514     25.564      -         
+M2_duty_5_sn_N_2                                                    Net         -                 -       2.263     -           18        
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         B                 In      -         27.827      -         
+hbridgecontroller_0.M2_duty_RNI619HR8[11]                           OR2         Y                 Out     0.646     28.474      -         
+M2_duty_5[11]                                                       Net         -                 -       0.386     -           2         
+hbridgecontroller_0.M2_duty_0[11]                                   DFN1        D                 In      -         28.860      -         
+==========================================================================================================================================
+Total path delay (propagation time + setup) of 29.433 is 13.633(46.3%) logic and 15.800(53.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      28.818
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -19.392
+
+    Number of logic level(s):                22
+    Starting point:                          smartfusionmss_0.MSS_ADLIB_INST / MSSPWDATA[14]
+    Ending point:                            hbridgecontroller_0.M2_duty[16] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                  Pin               Pin               Arrival     No. of    
+Name                                                                Type        Name              Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------
+smartfusionmss_0.MSS_ADLIB_INST                                     MSS_APB     MSSPWDATA[14]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PWDATA[14]                                    Net         -                 -       2.082     -           14        
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       B                 In      -         2.082       -         
+hbridgecontroller_0.un7_M1_duty_0_127                               NOR2B       Y                 Out     0.627     2.709       -         
+un7_M1_duty_0_74                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         C                 In      -         3.031       -         
+hbridgecontroller_0.un7_M1_duty_0_130_0                             AO1         Y                 Out     0.633     3.664       -         
+un7_M1_duty_0_130_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         A                 In      -         3.985       -         
+hbridgecontroller_0.un7_M1_duty_0_130                               OR2         Y                 Out     0.507     4.492       -         
+N_633                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        B                 In      -         4.878       -         
+hbridgecontroller_0.un7_M1_duty_0_156_0                             XOR2        Y                 Out     0.937     5.815       -         
+un7_M1_duty_0_156_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        A                 In      -         6.136       -         
+hbridgecontroller_0.un7_M1_duty_0_156                               XOR2        Y                 Out     0.488     6.625       -         
+N_644                                                               Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        A                 In      -         7.011       -         
+hbridgecontroller_0.un7_M1_duty_0_161_0                             XOR2        Y                 Out     0.488     7.499       -         
+un7_M1_duty_0_161_0                                                 Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        A                 In      -         7.820       -         
+hbridgecontroller_0.un7_M1_duty_0_161                               XOR2        Y                 Out     0.408     8.229       -         
+N_646                                                               Net         -                 -       1.184     -           4         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         A                 In      -         9.412       -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I10_P0N        OR2         Y                 Out     0.507     9.920       -         
+N339                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       A                 In      -         10.306      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I37_Y          NOR2B       Y                 Out     0.514     10.820      -         
+N394                                                                Net         -                 -       1.279     -           5         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       B                 In      -         12.099      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I80_Y          NOR2B       Y                 Out     0.627     12.727      -         
+N445                                                                Net         -                 -       0.806     -           3         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       B                 In      -         13.533      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_un1_Y     NOR2B       Y                 Out     0.627     14.160      -         
+I121_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         A                 In      -         14.482      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I121_Y         OR2         Y                 Out     0.507     14.989      -         
+N494                                                                Net         -                 -       0.386     -           2         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       B                 In      -         15.375      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_un1_Y     NOR2B       Y                 Out     0.627     16.003      -         
+I143_un1_Y                                                          Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         C                 In      -         16.324      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y_2       OR3         Y                 Out     0.751     17.075      -         
+ADD_24x24_fast_I143_Y_2                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         B                 In      -         17.396      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I143_Y         OR2         Y                 Out     0.646     18.043      -         
+N528                                                                Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        B                 In      -         18.364      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y_0       XOR2        Y                 Out     0.937     19.301      -         
+ADD_24x24_fast_I218_Y_0                                             Net         -                 -       0.322     -           1         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        A                 In      -         19.622      -         
+hbridgecontroller_0.un7_M1_duty_0_253.ADD_24x24_fast_I218_Y         XOR2        Y                 Out     0.408     20.031      -         
+un7_M1_duty[25]                                                     Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         C                 In      -         20.352      -         
+hbridgecontroller_0.M1_duty24lto23_0                                XO1         Y                 Out     0.490     20.843      -         
+M1_duty24lto23_0                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         C                 In      -         21.164      -         
+hbridgecontroller_0.M1_duty24lto23_3                                AO1         Y                 Out     0.633     21.797      -         
+M1_duty24lto23_3                                                    Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         B                 In      -         22.118      -         
+hbridgecontroller_0.M1_duty24lto23                                  OR2         Y                 Out     0.646     22.765      -         
+M1_duty24                                                           Net         -                 -       2.308     -           19        
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       A                 In      -         25.073      -         
+hbridgecontroller_0.M2_duty_5_sn_m1                                 NOR2B       Y                 Out     0.514     25.587      -         
+M2_duty_5_sn_N_2                                                    Net         -                 -       2.263     -           18        
+hbridgecontroller_0.M2_duty_RNO[16]                                 OR2         B                 In      -         27.850      -         
+hbridgecontroller_0.M2_duty_RNO[16]                                 OR2         Y                 Out     0.646     28.497      -         
+M2_duty_5[16]                                                       Net         -                 -       0.322     -           1         
+hbridgecontroller_0.M2_duty[16]                                     DFN1        D                 In      -         28.818      -         
+==========================================================================================================================================
+Total path delay (propagation time + setup) of 29.392 is 13.746(46.8%) logic and 15.645(53.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 156MB peak: 211MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 156MB peak: 211MB)
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell CarController.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2    19      1.0       19.0
+             AND2A     4      1.0        4.0
+              AND3    31      1.0       31.0
+               AO1    70      1.0       70.0
+              AO16     1      1.0        1.0
+              AO1A    12      1.0       12.0
+              AO1B     4      1.0        4.0
+              AO1C    13      1.0       13.0
+              AOI1    10      1.0       10.0
+             AOI1A    12      1.0       12.0
+             AOI1B    22      1.0       22.0
+               AX1     1      1.0        1.0
+              AX1A     2      1.0        2.0
+              AX1B     9      1.0        9.0
+              AX1C     4      1.0        4.0
+              AX1D    21      1.0       21.0
+              AX1E     2      1.0        2.0
+              AXO1     1      1.0        1.0
+              AXO2     1      1.0        1.0
+              AXO3     1      1.0        1.0
+              AXO6    13      1.0       13.0
+             AXOI1     1      1.0        1.0
+             AXOI2     1      1.0        1.0
+             AXOI3     3      1.0        3.0
+             AXOI4     2      1.0        2.0
+            CLKINT     1      0.0        0.0
+               GND     6      0.0        0.0
+               INV     2      1.0        2.0
+              MAJ3    43      1.0       43.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2    38      1.0       38.0
+              MX2A     1      1.0        1.0
+              MX2B     1      1.0        1.0
+              NOR2    34      1.0       34.0
+             NOR2A    66      1.0       66.0
+             NOR2B   202      1.0      202.0
+              NOR3    14      1.0       14.0
+             NOR3A    27      1.0       27.0
+             NOR3B    30      1.0       30.0
+             NOR3C    67      1.0       67.0
+               OA1    64      1.0       64.0
+              OA1A    12      1.0       12.0
+              OA1B     6      1.0        6.0
+              OA1C     4      1.0        4.0
+              OAI1    13      1.0       13.0
+               OR2    81      1.0       81.0
+              OR2A    34      1.0       34.0
+              OR2B     5      1.0        5.0
+               OR3    35      1.0       35.0
+              OR3A     4      1.0        4.0
+              OR3B     1      1.0        1.0
+             RCOSC     1      0.0        0.0
+               VCC     6      0.0        0.0
+               XA1     7      1.0        7.0
+              XA1A     6      1.0        6.0
+              XA1B     1      1.0        1.0
+              XA1C     1      1.0        1.0
+              XAI1     7      1.0        7.0
+             XNOR2    47      1.0       47.0
+             XNOR3     3      1.0        3.0
+               XO1     6      1.0        6.0
+              XO1A     4      1.0        4.0
+              XOR2    75      1.0       75.0
+              XOR3    59      1.0       59.0
+              ZOR3     1      1.0        1.0
+
+
+              DFN1    66      1.0       66.0
+            DFN1E0     5      1.0        5.0
+                   -----          ----------
+             TOTAL  1348              1332.0
+
+
+  IO Cell usage:
+              cell count
+         INBUF_MSS     2
+            OUTBUF     6
+        OUTBUF_MSS     1
+                   -----
+             TOTAL     9
+
+
+Core Cells         : 1332 of 4608 (29%)
+IO Cells           : 9
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 33MB peak: 211MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:10s cputime
+# Thu Nov 14 21:04:00 2019
+
+###########################################################]
