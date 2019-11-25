@@ -361,8 +361,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController.adb,adb"
 STATE="utd"
-TIME="1573844041"
-SIZE="2342912"
+TIME="1573844540"
+SIZE="2343936"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController.fdb,fdb"
 STATE="utd"
@@ -371,28 +371,28 @@ SIZE="64394"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController.ide_des,ide_des"
 STATE="utd"
-TIME="1573844041"
-SIZE="1081"
+TIME="1573844540"
+SIZE="1093"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_compile_log.rpt,log"
 STATE="utd"
-TIME="1573844041"
-SIZE="31905"
+TIME="1573844376"
+SIZE="31851"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_fp\CarController.pdb,pdb"
 STATE="utd"
-TIME="1573844041"
-SIZE="69896"
+TIME="1573844558"
+SIZE="69914"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_fp\CarController.pro,pro"
 STATE="utd"
-TIME="1573844041"
-SIZE="2427"
+TIME="1573844595"
+SIZE="2439"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_fp\projectData\CarController.pdb,pdb"
 STATE="utd"
-TIME="1573844041"
-SIZE="69896"
+TIME="1573844595"
+SIZE="69914"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_placeroute_log.rpt,log"
 STATE="utd"
@@ -411,8 +411,8 @@ SIZE="1196"
 ENDFILE
 VALUE "<project>\designer\impl1\smartfusionmss.ide_des,ide_des"
 STATE="utd"
-TIME="1573844041"
-SIZE="303"
+TIME="1573844250"
+SIZE="311"
 ENDFILE
 VALUE "<project>\hdl\hbridgecontroller.v,hdl"
 STATE="utd"
@@ -457,23 +457,23 @@ PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\synthesis\CarController.edn,syn_edn"
 STATE="utd"
-TIME="1573844041"
-SIZE="836861"
+TIME="1573844369"
+SIZE="838282"
 ENDFILE
 VALUE "<project>\synthesis\CarController.so,so"
 STATE="utd"
-TIME="1573844041"
-SIZE="233"
+TIME="1573844369"
+SIZE="237"
 ENDFILE
 VALUE "<project>\synthesis\CarController_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1573844041"
+TIME="1573844369"
 SIZE="546"
 ENDFILE
 VALUE "<project>\synthesis\CarController_syn.prj,prj"
 STATE="utd"
-TIME="1573844041"
-SIZE="2904"
+TIME="1573844369"
+SIZE="2948"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -486,17 +486,6 @@ VALUE "<project>\simulation\subsystem.bfm,sim"
 VALUE "<project>\component\work\CarController\CarController.pdc,pdc"
 ENDLIST
 LIST SynthesisConstraints
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
 VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
@@ -552,6 +541,18 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 ENDLIST
 LIST AssociatedStimulus
@@ -570,6 +571,14 @@ LIST CarController
 VALUE "<project>\simulation\subsystem.bfm,sim"
 VALUE "<project>\component\work\CarController\CarController.pdc,pdc"
 ENDLIST
+LIST smartfusionmss
+VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\smartfusionmss\smartfusionmss.pdc,pdc"
+VALUE "<project>\component\work\smartfusionmss\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
+VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
+ENDLIST
 LIST CoreAPB3
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
@@ -581,14 +590,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
-ENDLIST
-LIST smartfusionmss
-VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\simulation\user.bfm,sim"
-VALUE "<project>\simulation\test.bfm,sim"
-VALUE "<project>\component\work\smartfusionmss\smartfusionmss.pdc,pdc"
-VALUE "<project>\component\work\smartfusionmss\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
-VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 ENDLIST
 ENDLIST
 LIST SimulationOptions
@@ -657,8 +658,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -705,6 +706,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -719,7 +732,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:CarController_prgdata_log.rpt
+ReportsCurrentItem;Program Device:CarController_program.log
 StartPage;StartPage;0
 SmartDesign;smartfusionmss;0
 HDL;hdl\hbridgecontroller.v;0
@@ -733,8 +746,8 @@ LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_com
 ENDLIST
 LIST "CarController::work","component\work\CarController\CarController.v","TRUE","FALSE"
 SUBBLOCK "hbridgecontroller::work","hdl\hbridgecontroller.v","FALSE","FALSE"
-SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
 SUBBLOCK "smartfusionmss::work","component\work\smartfusionmss\smartfusionmss.v","TRUE","FALSE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
 ENDLIST
 LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
 SUBBLOCK "HAL::work","","FALSE","FALSE"

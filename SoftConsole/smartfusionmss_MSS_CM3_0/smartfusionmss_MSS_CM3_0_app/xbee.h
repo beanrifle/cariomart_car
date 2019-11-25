@@ -12,6 +12,6 @@ char recieved_data[20];
 void initialize_controller_reciever(void);
 
 // Function handler for recieving of controller data
-//void uart1_rx_handler( mss_uart_instance_t * this_uart );
+void uart1_rx_handler( mss_uart_instance_t * this_uart );
 
 #endif
