@@ -2,7 +2,8 @@
 #include "CarControl.h"
 #include <stdio.h>
 
-int button_state=0;
+int curr_button_state=0;
+int new_button_state=0;
 
 void initialize_controller_reciever(void) {
 	MSS_UART_init(&g_mss_uart1, MSS_UART_9600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
@@ -27,28 +28,36 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 
 	// Process the packet string recieved data, i is the length of the recieved data
 
-	if(recieved_data[0]=='0'){
-		//Packet structure  = source,button_state,accel_data
-		button_state = int(recieved_data[2]);
+	//
+	if(recieved_data[0]=='2'){
+		//Packet structure  = packet_header("2"),button_state,accel_data
+		new_button_state = int(recieved_data[2]);
 		accel = ;
-		if(button_state == 1){
+		if(new_button_state == 1 && curr_button_state!=1){
 			setLeftSideForward();
 			setRightSideForward();
 			setLeftSideSpeed(100 - (335-accel)/2);
 			setRightSideSpeed(100 + (335-accel)/2);
 		}
-		else if(button_state==2){
+		else if(new_button_state==1){
+			setLeftSideSpeed(100 - (335-accel)/2);
+			setRightSideSpeed(100 + (335-accel)/2);
+		}
+		else if(new_button_state==2&&curr_button_state!=2){
 			setLeftSideReverse();
 			setRightSideReverse();
 			setLeftSideSpeed(100 - (335-accel)/2);
 			setRightSideSpeed(100 + (335-accel)/2);
 		}
+		else if(new_button_state==2){
+			setLeftSideSpeed(100 - (335-accel)/2);
+			setRightSideSpeed(100 + (335-accel)/2);
+		}
 		else{
-			setLeftSideForward();
-			setRightSideForward();
 			setLeftSideSpeed(0);
 			setRightSideSpeed(0);
 		}
 	}
+	button_state = new_button_state;
 
 }

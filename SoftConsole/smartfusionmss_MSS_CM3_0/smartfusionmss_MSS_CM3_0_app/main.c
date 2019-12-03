@@ -17,10 +17,13 @@ int main() {
 
 
 
-	/*setLeftSideForward();
+	setLeftSideForward();
 	setRightSideForward();
 
-	setLeftSideSpeed(64);
+	setLeftSideSpeed(0);
+	setRightSideSpeed(0);
+
+	/*setLeftSideSpeed(64);
 	setRightSideSpeed(64);
 
 	setLeftSideReverse();
