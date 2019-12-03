@@ -32,7 +32,9 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 	if(recieved_data[0]=='2'){
 		//Packet structure  = packet_header("2"),button_state,accel_data
 		new_button_state = int(recieved_data[2]);
-		accel = ;
+
+		sscanf(recieved_data+4, "%d", &accel);
+
 		if(new_button_state == 1 && curr_button_state!=1){
 			setLeftSideForward();
 			setRightSideForward();
@@ -58,6 +60,6 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 			setRightSideSpeed(0);
 		}
 	}
-	button_state = new_button_state;
+	curr_button_state = new_button_state;
 
 }
