@@ -15,8 +15,6 @@ int main() {
 	int race=0;
 	initialize_controller_reciever();
 
-
-
 	setLeftSideForward();
 	setRightSideForward();
 
