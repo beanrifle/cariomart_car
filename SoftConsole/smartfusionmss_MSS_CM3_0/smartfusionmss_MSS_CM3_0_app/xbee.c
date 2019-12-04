@@ -6,14 +6,13 @@ int curr_button_state=0;
 int new_button_state=0;
 
 void initialize_controller_reciever(void) {
-	MSS_UART_init(&g_mss_uart1, MSS_UART_9600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
+	MSS_UART_init(&g_mss_uart1, MSS_UART_115200_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
 	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_SINGLE_BYTE);
 }
 
 void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 	char rx_buff[1];
 	char recieved_data[50];
-	int button_state=0;
 	int accel=0;
 	int rx_size = MSS_UART_get_rx( this_uart, (uint8_t*)rx_buff, sizeof(rx_buff) );
 	if (*rx_buff == '\r' || *rx_buff == '\n') rx_size = MSS_UART_get_rx( this_uart, (uint8_t*)rx_buff, sizeof(rx_buff) );
