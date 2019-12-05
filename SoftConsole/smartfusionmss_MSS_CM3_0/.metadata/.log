@@ -4476,3 +4476,98 @@ org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$7.run(DebugUIPlugin.java:952)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2019-12-05 14:24:54.931 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  	.equ	STACK_TOP, 0x20000800 	.equ	SYSREG_SOFT_RST_CR, 0xE0042030 	.equ    ones, 0xFF000000 	.section .int_vector,"a",%progbits @ First linker code section 	.global	 _start                    @ Linker entry point _start: 	.word	STACK_TOP, main 	@ End of int_vector section 	@ Standard text section 	.text 	.syntax	unified 	.thumb 	.type	main, %function main: 	@ Load SYSREG_SOFT_RST_CR address 	movw	r0, #:lower16:SYSREG_SOFT_RST_CR 	movt	r0, #:upper16:SYSREG_SOFT_RST_CR 	@ Reset GPIO hardware 	ldr	r1, [r0, #0] 	orr	r1, #0x4000 	str	r1, [r0, #0] 	@ Take GPIO hardware out of reset 	ldr	r1, [r0, #0] 	mvn	r2, #0x4000 @ move bitwise negation of 0x4000 into r2 	and	r1, r2 	str	r1, [r0, #0] 	mov	r0, #24 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 24 	mov	r0, #25 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 25 	mov	r0, #26 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 26 	mov	r0, #27 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 27 	mov	r0, #28 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 28 	mov	r0, #29 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 29 	mov	r0, #30 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 30 	mov	r0, #31 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 31 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO setAgain: 	mov r2, #24 shift: 	mov	r1, #1 	add r2, r2, #1 	lsl	r1, r2 	mov r10, #0 inner: 	movw r8, #:lower16:ones 	movt r8, #:upper16:ones 	eor r0, r1, r8 	bl	setGPIO @ on 	mov r4, #0 count_off: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_off 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO @ off 	mov r4, #0 count_on: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_on 	add r10, r10, #1 	cmp r10, #5 	bne inner 	cmp r2, #32 	beq setAgain 	b shift 	.end
+Command-line arguments:  -os win32 -ws win32 -arch x86 	.equ	STACK_TOP, 0x20000800 	.equ	SYSREG_SOFT_RST_CR, 0xE0042030 	.equ    ones, 0xFF000000 	.section .int_vector,"a",%progbits @ First linker code section 	.global	 _start                    @ Linker entry point _start: 	.word	STACK_TOP, main 	@ End of int_vector section 	@ Standard text section 	.text 	.syntax	unified 	.thumb 	.type	main, %function main: 	@ Load SYSREG_SOFT_RST_CR address 	movw	r0, #:lower16:SYSREG_SOFT_RST_CR 	movt	r0, #:upper16:SYSREG_SOFT_RST_CR 	@ Reset GPIO hardware 	ldr	r1, [r0, #0] 	orr	r1, #0x4000 	str	r1, [r0, #0] 	@ Take GPIO hardware out of reset 	ldr	r1, [r0, #0] 	mvn	r2, #0x4000 @ move bitwise negation of 0x4000 into r2 	and	r1, r2 	str	r1, [r0, #0] 	mov	r0, #24 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 24 	mov	r0, #25 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 25 	mov	r0, #26 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 26 	mov	r0, #27 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 27 	mov	r0, #28 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 28 	mov	r0, #29 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 29 	mov	r0, #30 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 30 	mov	r0, #31 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 31 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO setAgain: 	mov r2, #24 shift: 	mov	r1, #1 	add r2, r2, #1 	lsl	r1, r2 	mov r10, #0 inner: 	movw r8, #:lower16:ones 	movt r8, #:upper16:ones 	eor r0, r1, r8 	bl	setGPIO @ on 	mov r4, #0 count_off: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_off 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO @ off 	mov r4, #0 count_on: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_on 	add r10, r10, #1 	cmp r10, #5 	bne inner 	cmp r2, #32 	beq setAgain 	b shift 	.end -data C:/Users/youngben/cariomart_car/SoftConsole/smartfusionmss_MSS_CM3_0
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-05 14:53:35.908
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-05 14:53:35.908
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-05 14:53:35.924
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-05 14:53:35.924
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-05 14:55:37.385
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-05 14:55:37.389
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 2 2019-12-05 14:55:37.394
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-05 14:55:37.399
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.ui.views.memory.AbstractMemoryViewPane.handleDebugEvents(AbstractMemoryViewPane.java:286)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

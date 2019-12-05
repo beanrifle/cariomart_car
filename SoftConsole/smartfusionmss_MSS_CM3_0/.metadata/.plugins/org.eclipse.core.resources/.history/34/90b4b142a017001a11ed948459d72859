@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <string.h>
+
+#include "drivers/mss_uart/mss_uart.h"
+#include "drivers/mss_gpio/mss_gpio.h"
+
+#include "CarControl.h"
+#include "xbee.h"
+
+int main() {
+	XBEE_init();
+
+	setLeftSideForward();
+	setRightSideForward();
+
+	setLeftSideSpeed(0);
+	setRightSideSpeed(0);
+
+	/*setLeftSideSpeed(127);
+	setRightSideSpeed(127);
+
+	setLeftSideReverse();
+	setRightSideReverse();
+
+	setLeftSideSpeed(255);
+	setRightSideSpeed(255);
+
+	setLeftSideSpeed(0);
+	setRightSideSpeed(0);*/
+
+	while(1){
+
+	}
+
+}

@@ -4,12 +4,15 @@
 #include <inttypes.h>
 #include "drivers/mss_uart/mss_uart.h"
 
-int turn_direction;
-uint8_t gas_button;
-char recieved_data[20];
+#define ACCEL_CENTER 335
+
+int game_status;
 
 // Initialize uart interface and function handler for controller data reception
-void initialize_controller_reciever(void);
+void XBEE_init(void);
+
+// Send string over the xbee channel
+void XBEE_send(char* string);
 
 // Function handler for recieving of controller data
 void uart1_rx_handler( mss_uart_instance_t * this_uart );
