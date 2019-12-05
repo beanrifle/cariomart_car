@@ -8,34 +8,9 @@
 #include "CarControl.h"
 #include "xbee.h"
 
-
-
 int main() {
-	 // state of forward/reverse buttons
-	int race=0;
-	initialize_controller_reciever();
+	XBEE_init();
+	CarControl_init();
 
-	setLeftSideForward();
-	setRightSideForward();
-
-	setLeftSideSpeed(0);
-	setRightSideSpeed(0);
-
-	/*setLeftSideSpeed(64);
-	setRightSideSpeed(64);
-
-	setLeftSideReverse();
-	setRightSideReverse();
-
-	setLeftSideSpeed(128);
-	setRightSideSpeed(128);
-
-	setLeftSideSpeed(0);
-	setRightSideSpeed(0);
-	*/
-
-	while(1){
-
-	}
-
+	while(1);
 }
