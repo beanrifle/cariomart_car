@@ -11,7 +11,7 @@
 
 
 int main() {
-	; // state of forward/reverse buttons
+	 // state of forward/reverse buttons
 	int race=0;
 	initialize_controller_reciever();
 
