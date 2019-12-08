@@ -25,7 +25,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 	if (*rx_buff == '\r' || *rx_buff == '\n') rx_size = MSS_UART_get_rx( this_uart, (uint8_t*)rx_buff, sizeof(rx_buff) );
 	if (*rx_buff == '\r' || *rx_buff == '\n') rx_size = MSS_UART_get_rx( this_uart, (uint8_t*)rx_buff, sizeof(rx_buff) );
 
-	while (*rx_buff != '\0' && i < 50 && no_rcv < 500) {
+	while (*rx_buff != '\r' &&  *rx_buff != '\n' && i < 50 && no_rcv < 500) {
 		if (rx_size > 0 ) {
 			received_data[i++] = *rx_buff;
 			no_rcv = 0;
