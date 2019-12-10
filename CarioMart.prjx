@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\youngben\cariomart_car"
+KEY ProjectLocation "C:\Users\youngben\Documents\cariomart_car"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954764"
 SIZE="2769"
 PARENT="<project>\component\work\CarController\CarController.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954764"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -71,14 +71,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -86,7 +86,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -94,7 +94,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -102,7 +102,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -110,7 +110,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -118,7 +118,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="32806"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -126,7 +126,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="3556"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -134,7 +134,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="6765"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -142,7 +142,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -152,14 +152,14 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954731"
 SIZE="945"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v,hdl"
 STATE="utd"
-TIME="1575573056"
-SIZE="11942"
+TIME="1536348874"
+SIZE="11243"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -170,97 +170,103 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="253"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="253"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="253"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="254"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
+SIZE="252"
+PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_SPI\1.0.102\MSS_SPI.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575954730"
 SIZE="252"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="254"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="253"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="254"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\work\CarController\CarController.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
-SIZE="5226"
+TIME="1575954777"
+SIZE="7006"
 ENDFILE
 VALUE "<project>\component\work\CarController\CarController.pdc,pdc"
 STATE="utd"
-TIME="1575573056"
-SIZE="1670"
+TIME="1575954763"
+SIZE="2315"
 PARENT="<project>\component\work\CarController\CarController.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -270,51 +276,51 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\CarController\CarController.v,hdl"
 STATE="utd"
-TIME="1575573056"
-SIZE="14575"
+TIME="1575954764"
+SIZE="15635"
 PARENT="<project>\component\work\CarController\CarController.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
-SIZE="2205"
+TIME="1575954766"
+SIZE="2374"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="31587"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="495"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="2887"
 PARENT="<project>\component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="15874"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="12226"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 BEGIN_USE_CONSTRAINT
@@ -326,7 +332,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954730"
 SIZE="200"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 BEGIN_USE_CONSTRAINT
@@ -338,13 +344,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\smartfusionmss.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575573056"
-SIZE="12862"
+TIME="1575954732"
+SIZE="14766"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\smartfusionmss.pdc,pdc"
 STATE="utd"
-TIME="1575573056"
-SIZE="1543"
+TIME="1575954727"
+SIZE="1830"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -354,126 +360,126 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\smartfusionmss\smartfusionmss.v,hdl"
 STATE="utd"
-TIME="1575573056"
-SIZE="19598"
+TIME="1575954731"
+SIZE="22069"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController.adb,adb"
 STATE="utd"
-TIME="1575573056"
-SIZE="2343936"
+TIME="1575954607"
+SIZE="2339840"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController.fdb,fdb"
 STATE="utd"
-TIME="1575573937"
-SIZE="64376"
+TIME="1575955004"
+SIZE="64697"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController.ide_des,ide_des"
 STATE="utd"
-TIME="1575573056"
-SIZE="1093"
+TIME="1575954607"
+SIZE="1063"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_compile_log.rpt,log"
 STATE="utd"
-TIME="1575573056"
-SIZE="31851"
+TIME="1575954607"
+SIZE="31803"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_fp\CarController.pdb,pdb"
 STATE="utd"
-TIME="1575573056"
-SIZE="69913"
+TIME="1575954607"
+SIZE="69877"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_fp\CarController.pro,pro"
 STATE="utd"
-TIME="1575573056"
-SIZE="2439"
+TIME="1575954607"
+SIZE="2409"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_fp\projectData\CarController.pdb,pdb"
 STATE="utd"
-TIME="1575573056"
-SIZE="69913"
+TIME="1575954607"
+SIZE="69877"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1575573924"
-SIZE="2718"
+TIME="1575954992"
+SIZE="2699"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1575573937"
-SIZE="657"
+TIME="1575955004"
+SIZE="697"
 ENDFILE
 VALUE "<project>\designer\impl1\CarController_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1575573928"
-SIZE="1176"
+TIME="1575954996"
+SIZE="1196"
 ENDFILE
 VALUE "<project>\designer\impl1\smartfusionmss.ide_des,ide_des"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="311"
 ENDFILE
 VALUE "<project>\hdl\hbridgecontroller.v,hdl"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="4421"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
-TIME="1575573056"
+TIME="1555354520"
 SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1575573056"
-SIZE="42"
+TIME="1536348874"
+SIZE="41"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954764"
 SIZE="642"
 PARENT="<project>\component\work\CarController\CarController.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954729"
 SIZE="5460"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="670"
 PARENT="<project>\component\work\smartfusionmss\smartfusionmss.cxf"
 ENDFILE
 VALUE "<project>\synthesis\CarController.edn,syn_edn"
 STATE="utd"
-TIME="1575573056"
-SIZE="838282"
+TIME="1575954607"
+SIZE="838281"
 ENDFILE
 VALUE "<project>\synthesis\CarController.so,so"
 STATE="utd"
-TIME="1575573056"
-SIZE="237"
+TIME="1575954607"
+SIZE="227"
 ENDFILE
 VALUE "<project>\synthesis\CarController_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1575573056"
+TIME="1575954607"
 SIZE="546"
 ENDFILE
 VALUE "<project>\synthesis\CarController_syn.prj,prj"
 STATE="utd"
-TIME="1575573056"
-SIZE="2948"
+TIME="1575954607"
+SIZE="2838"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -551,18 +557,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -656,7 +650,7 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole v3.3"
+NAME="Softconsole v3.3"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
 LOCATION="C:\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
@@ -717,18 +711,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB"
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -767,6 +749,7 @@ SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_NVM_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_PDMA_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_RTC_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_SPI_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_Timer_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_UART_Driver::work","","FALSE","FALSE"
 SUBBLOCK "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
@@ -803,6 +786,8 @@ LIST "MSS_PDMA_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_RTC_Driver::work","","FALSE","FALSE"
 ENDLIST
+LIST "MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
 LIST "MSS_Timer_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_UART_Driver::work","","FALSE","FALSE"
@@ -816,9 +801,11 @@ ENDLIST
 LIST "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "smartfusionmss::work","component\work\smartfusionmss\smartfusionmss.v","TRUE","FALSE"
+SUBBLOCK "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 SUBBLOCK "MSS_APB::work","component\work\smartfusionmss\mss_tshell.v","FALSE","FALSE"
 SUBBLOCK "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+SUBBLOCK "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 SUBBLOCK "smartfusionmss_tmp_MSS_CCC_0_MSS_CCC::work","component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
 ENDLIST
 LIST "smartfusionmss_tmp_MSS_CCC_0_MSS_CCC::work","component\work\smartfusionmss\MSS_CCC_0\smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"

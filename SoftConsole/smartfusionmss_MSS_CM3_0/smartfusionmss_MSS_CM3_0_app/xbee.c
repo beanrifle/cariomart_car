@@ -25,7 +25,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 	if (*rx_buff == '\r' || *rx_buff == '\n') rx_size = MSS_UART_get_rx( this_uart, (uint8_t*)rx_buff, sizeof(rx_buff) );
 	if (*rx_buff == '\r' || *rx_buff == '\n') rx_size = MSS_UART_get_rx( this_uart, (uint8_t*)rx_buff, sizeof(rx_buff) );
 
-	while (*rx_buff != '\r' &&  *rx_buff != '\n' && i < 50 && no_rcv < 500) {
+	while (!(*rx_buff == '\r' ||  *rx_buff == '\n') && i < 50 && no_rcv < 500) {
 		if (rx_size > 0 ) {
 			received_data[i++] = *rx_buff;
 			no_rcv = 0;
@@ -47,8 +47,8 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 		sscanf(received_data+4, "%d", &accel);
 
 		// Calculate individual side speeds
-		int left_speed = max_speed - (ACCEL_CENTER - accel) / 2;
-		int right_speed = max_speed + (ACCEL_CENTER - accel) / 2;
+		int left_speed = max_speed - (ACCEL_CENTER - accel) - OFFSET;
+		int right_speed = max_speed + (ACCEL_CENTER - accel) + OFFSET;
 		if (left_speed > 255) left_speed = 255;
 		else if (left_speed < 0) left_speed = 0;
 		if (right_speed > 255) right_speed = 255;

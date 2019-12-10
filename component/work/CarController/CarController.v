@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Nov 15 13:56:46 2019
+// Created by SmartDesign Tue Dec 10 00:12:44 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -9,32 +9,46 @@
 module CarController(
     // Inputs
     MSS_RESET_N,
+    SPI_1_DI,
     UART_0_RXD,
     UART_1_RXD,
     // Outputs
+    SPI_1_DO,
+    SPI_1_FAB_SS,
     UART_0_TXD,
     UART_1_TXD,
     motor1_ctrl,
     motor1_pwm,
     motor2_ctrl,
-    motor2_pwm
+    motor2_pwm,
+    // Inouts
+    SPI_1_CLK,
+    SPI_1_SS
 );
 
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
 input        MSS_RESET_N;
+input        SPI_1_DI;
 input        UART_0_RXD;
 input        UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output       SPI_1_DO;
+output [1:1] SPI_1_FAB_SS;
 output       UART_0_TXD;
 output       UART_1_TXD;
 output [1:0] motor1_ctrl;
 output       motor1_pwm;
 output [1:0] motor2_ctrl;
 output       motor2_pwm;
+//--------------------------------------------------------------------
+// Inout
+//--------------------------------------------------------------------
+inout        SPI_1_CLK;
+inout        SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -60,16 +74,23 @@ wire          smartfusionmss_0_MSS_MASTER_APB_PSELx;
 wire          smartfusionmss_0_MSS_MASTER_APB_PSLVERR;
 wire   [31:0] smartfusionmss_0_MSS_MASTER_APB_PWDATA;
 wire          smartfusionmss_0_MSS_MASTER_APB_PWRITE;
+wire          SPI_1_CLK;
+wire          SPI_1_DI;
+wire          SPI_1_DO_net_0;
+wire   [1:1]  SPI_1_FAB_SS_net_0;
+wire          SPI_1_SS;
 wire          UART_0_RXD;
-wire          UART_0_TXD_0;
+wire          UART_0_TXD_1;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
 wire          motor1_pwm_net_1;
 wire          motor2_pwm_net_1;
 wire          UART_1_TXD_net_1;
+wire          UART_0_TXD_1_net_0;
 wire   [1:0]  motor2_ctrl_net_1;
 wire   [1:0]  motor1_ctrl_net_1;
-wire          UART_0_TXD_0_net_0;
+wire          SPI_1_DO_net_1;
+wire   [1:1]  SPI_1_FAB_SS_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -95,10 +116,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [19:0] smartfusionmss_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]smartfusionmss_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] smartfusionmss_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] smartfusionmss_0_MSS_MASTER_APB_PADDR_0;
-wire   [19:0] smartfusionmss_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -124,18 +145,22 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign motor1_pwm_net_1   = motor1_pwm_net_0;
-assign motor1_pwm         = motor1_pwm_net_1;
-assign motor2_pwm_net_1   = motor2_pwm_net_0;
-assign motor2_pwm         = motor2_pwm_net_1;
-assign UART_1_TXD_net_1   = UART_1_TXD_net_0;
-assign UART_1_TXD         = UART_1_TXD_net_1;
-assign motor2_ctrl_net_1  = motor2_ctrl_net_0;
-assign motor2_ctrl[1:0]   = motor2_ctrl_net_1;
-assign motor1_ctrl_net_1  = motor1_ctrl_net_0;
-assign motor1_ctrl[1:0]   = motor1_ctrl_net_1;
-assign UART_0_TXD_0_net_0 = UART_0_TXD_0;
-assign UART_0_TXD         = UART_0_TXD_0_net_0;
+assign motor1_pwm_net_1      = motor1_pwm_net_0;
+assign motor1_pwm            = motor1_pwm_net_1;
+assign motor2_pwm_net_1      = motor2_pwm_net_0;
+assign motor2_pwm            = motor2_pwm_net_1;
+assign UART_1_TXD_net_1      = UART_1_TXD_net_0;
+assign UART_1_TXD            = UART_1_TXD_net_1;
+assign UART_0_TXD_1_net_0    = UART_0_TXD_1;
+assign UART_0_TXD            = UART_0_TXD_1_net_0;
+assign motor2_ctrl_net_1     = motor2_ctrl_net_0;
+assign motor2_ctrl[1:0]      = motor2_ctrl_net_1;
+assign motor1_ctrl_net_1     = motor1_ctrl_net_0;
+assign motor1_ctrl[1:0]      = motor1_ctrl_net_1;
+assign SPI_1_DO_net_1        = SPI_1_DO_net_0;
+assign SPI_1_DO              = SPI_1_DO_net_1;
+assign SPI_1_FAB_SS_net_1[1] = SPI_1_FAB_SS_net_0[1];
+assign SPI_1_FAB_SS[1:1]     = SPI_1_FAB_SS_net_1[1];
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -298,22 +323,28 @@ hbridgecontroller_0(
 //--------smartfusionmss
 smartfusionmss smartfusionmss_0(
         // Inputs
-        .MSS_RESET_N ( MSS_RESET_N ),
-        .MSSPREADY   ( smartfusionmss_0_MSS_MASTER_APB_PREADY ),
-        .MSSPSLVERR  ( smartfusionmss_0_MSS_MASTER_APB_PSLVERR ),
-        .UART_1_RXD  ( UART_1_RXD ),
-        .MSSPRDATA   ( smartfusionmss_0_MSS_MASTER_APB_PRDATA ),
-        .UART_0_RXD  ( UART_0_RXD ),
+        .MSS_RESET_N  ( MSS_RESET_N ),
+        .MSSPREADY    ( smartfusionmss_0_MSS_MASTER_APB_PREADY ),
+        .MSSPSLVERR   ( smartfusionmss_0_MSS_MASTER_APB_PSLVERR ),
+        .UART_1_RXD   ( UART_1_RXD ),
+        .UART_0_RXD   ( UART_0_RXD ),
+        .MSSPRDATA    ( smartfusionmss_0_MSS_MASTER_APB_PRDATA ),
+        .SPI_1_DI     ( SPI_1_DI ),
         // Outputs
-        .MSSPSEL     ( smartfusionmss_0_MSS_MASTER_APB_PSELx ),
-        .MSSPENABLE  ( smartfusionmss_0_MSS_MASTER_APB_PENABLE ),
-        .MSSPWRITE   ( smartfusionmss_0_MSS_MASTER_APB_PWRITE ),
-        .FAB_CLK     ( smartfusionmss_0_FAB_CLK ),
-        .M2F_RESET_N ( smartfusionmss_0_M2F_RESET_N ),
-        .UART_1_TXD  ( UART_1_TXD_net_0 ),
-        .MSSPADDR    ( smartfusionmss_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( smartfusionmss_0_MSS_MASTER_APB_PWDATA ),
-        .UART_0_TXD  ( UART_0_TXD_0 ) 
+        .MSSPSEL      ( smartfusionmss_0_MSS_MASTER_APB_PSELx ),
+        .MSSPENABLE   ( smartfusionmss_0_MSS_MASTER_APB_PENABLE ),
+        .MSSPWRITE    ( smartfusionmss_0_MSS_MASTER_APB_PWRITE ),
+        .FAB_CLK      ( smartfusionmss_0_FAB_CLK ),
+        .M2F_RESET_N  ( smartfusionmss_0_M2F_RESET_N ),
+        .UART_1_TXD   ( UART_1_TXD_net_0 ),
+        .UART_0_TXD   ( UART_0_TXD_1 ),
+        .MSSPADDR     ( smartfusionmss_0_MSS_MASTER_APB_PADDR ),
+        .MSSPWDATA    ( smartfusionmss_0_MSS_MASTER_APB_PWDATA ),
+        .SPI_1_DO     ( SPI_1_DO_net_0 ),
+        .SPI_1_FAB_SS ( SPI_1_FAB_SS_net_0 ),
+        // Inouts
+        .SPI_1_CLK    ( SPI_1_CLK ),
+        .SPI_1_SS     ( SPI_1_SS ) 
         );
 
 

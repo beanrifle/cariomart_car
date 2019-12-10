@@ -5,6 +5,7 @@
 #include "drivers/mss_uart/mss_uart.h"
 
 #define ACCEL_CENTER 335
+#define OFFSET 20
 
 int game_status;
 

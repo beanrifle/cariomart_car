@@ -4,27 +4,29 @@ Report for cell CarController.verilog
                                cell       count     area    count*area
                         CoreAPB3_Z1         1       5.0        5.0
                                 GND         1       0.0        0.0
-                             OUTBUF         6       0.0        0.0
+                             OUTBUF         7       0.0        0.0
                                 VCC         1       0.0        0.0
                               XNOR2         1       1.0        1.0
           hbridgecontroller_200000s         1    1326.0     1326.0
                      smartfusionmss         1       0.0        0.0
                             
-                         TOTAL             12               1332.0
+                         TOTAL             13               1332.0
 ----------------------------------------------------------------------
 Report for cell smartfusionmss.netlist
      Instance path:  smartfusionmss_0
                                           Cell usage:
                                cell       count     area    count*area
+                          BIBUF_MSS         2       0.0        0.0
                              CLKINT         1       0.0        0.0
                                 GND         1       0.0        0.0
-                          INBUF_MSS         3       0.0        0.0
+                          INBUF_MSS         4       0.0        0.0
                             MSS_APB         1       0.0        0.0
                          OUTBUF_MSS         2       0.0        0.0
+                        TRIBUFF_MSS         1       0.0        0.0
                                 VCC         1       0.0        0.0
           smartfusionmss_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             10                  0.0
+                         TOTAL             14                  0.0
 ----------------------------------------------------------------------
 Report for cell smartfusionmss_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  smartfusionmss_0.MSS_CCC_0

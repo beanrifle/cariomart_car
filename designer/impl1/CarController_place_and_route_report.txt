@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Dec 05 14:25:22 2019 ***************************************************************************
+                          Tue Dec 10 00:16:30 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: C:\Users\youngben\cariomart_car\designer\impl1\CarController.adb
+File Name: C:\Users\youngben\Documents\cariomart_car\designer\impl1\CarController.adb
 Design Name: CarController  Design State: layout
-Last Saved: Thu Dec 05 14:24:29 2019
+Last Saved: Tue Dec 10 00:15:56 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Dec 05 14:21:41 2019:
-        C:\Users\youngben\cariomart_car\synthesis\CarController.edn
-        C:\Users\youngben\cariomart_car\component\work\CarController\CarController.pdc
+Source File(s) Imported on Tue Dec 10 00:14:03 2019:
+        C:\Users\youngben\Documents\cariomart_car\synthesis\CarController.edn
+        C:\Users\youngben\Documents\cariomart_car\component\work\CarController\CarController.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : C:\Users\youngben\cariomart_car\synthesis\CarController.edn
-              C:\Users\youngben\cariomart_car\component\work\CarController\CarController.pdc
+Source      : C:\Users\youngben\Documents\cariomart_car\synthesis\CarController.edn
+
+C:\Users\youngben\Documents\cariomart_car\component\work\CarController\CarController.pdc
 Format      : EDIF
 Topcell     : CarController
 Speed grade : STD
@@ -99,10 +100,6 @@ Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI0CLKO drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI0MODE drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1DO drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1DOE drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1MODE drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_MACTXEN drives no load.
@@ -276,14 +273,12 @@ Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI0SSO[4] drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[0] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[1] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[2] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[3] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[4] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[5] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[6] drives no load.
-Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_SPI1SSO[7] drives no load.
+Warning: CMP201: Net smartfusionmss_0/SPI1SSO_net_0[2] drives no load.
+Warning: CMP201: Net smartfusionmss_0/SPI1SSO_net_0[3] drives no load.
+Warning: CMP201: Net smartfusionmss_0/SPI1SSO_net_0[4] drives no load.
+Warning: CMP201: Net smartfusionmss_0/SPI1SSO_net_0[5] drives no load.
+Warning: CMP201: Net smartfusionmss_0/SPI1SSO_net_0[6] drives no load.
+Warning: CMP201: Net smartfusionmss_0/SPI1SSO_net_0[7] drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_MACTXD[0] drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_MACTXD[1] drives no load.
 Warning: CMP201: Net smartfusionmss_0/MSS_ADLIB_INST_ACEFLAGS[0] drives no load.
@@ -372,7 +367,7 @@ Optimized macros:
 
     Total macros optimized  70
 
-There were 0 error(s) and 281 warning(s) in this design.
+There were 0 error(s) and 275 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -393,10 +388,10 @@ Compile report:
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:   1262  Total:   4608   (27.39%)
-    Fabric IO (W/ clocks)      Used:      6  Total:     94   (6.38%)
+    Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
+    Dedicated MSS IO           Used:      9  Total:     43   (20.93%)
     GLOBAL (Chip+Quadrant)     Used:      1  Total:     15   (6.67%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -429,7 +424,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 0             | 0            | 0
-    Output I/O                            | 6             | 0            | 0
+    Output I/O                            | 7             | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -440,13 +435,15 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 0     | 6      | 0
+    LVTTL                           | 3.30v | N/A   | 0     | 7      | 0
 
 I/O Placement:
 
-    Locked  :   6 ( 100.00% )
+    Locked  :   6 ( 85.71% )
     Placed  :   0
-    UnPlaced:   0
+    UnPlaced:   1 ( 14.29% )
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -533,16 +530,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Dec 05 14:24:59 2019
+Timing-driven Placer Started: Tue Dec 10 00:16:07 2019
 
-Placer Finished: Thu Dec 05 14:25:09 2019
+Placer Finished: Tue Dec 10 00:16:17 2019
 Total Placer CPU Time:     00:00:10
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: CarController                   Started: Thu Dec 05 14:25:11 2019
+Design: CarController                   Started: Tue Dec 10 00:16:19 2019
 
  
 Iterative improvement...
@@ -550,13 +547,10 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: CarController                   
-Finished: Thu Dec 05 14:25:19 2019
-Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
-Total Memory Usage: 183.4 Mbytes
+Finished: Tue Dec 10 00:16:28 2019
+Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
+Total Memory Usage: 183.8 Mbytes
                         o - o - o - o - o - o
 
-status 257
-status 257
-status 257
 
 

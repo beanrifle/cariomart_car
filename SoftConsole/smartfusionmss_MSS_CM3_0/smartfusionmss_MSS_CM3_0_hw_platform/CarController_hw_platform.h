@@ -2,7 +2,7 @@
 #define CarController_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Thu Nov 14 21:02:52 2019
+*Created by Microsemi SmartDesign  Tue Dec 10 00:12:47 2019
 *
 *Memory map specification for peripherals in CarController
 */
